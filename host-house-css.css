@@ -1,6 +1,8 @@
 /* font link  */
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 
 *{
     margin: 0;
@@ -38,23 +40,20 @@ nav a:hover{
     width: 100%;
     height: 100vh;
     background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-size: cover;
     object-fit: contain;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    font-family: "Ubuntu";
 }
-.hero_content h1{
-    max-width: 60%;
-    margin: auto;
-}
+
 .hero_content button{
     padding: 8px;
     font-weight:500;
     background-color: #FF6F6F;
     color: white;
+    
 }
 @media screen and (max-width:768px) {
     .hero{
@@ -73,7 +72,47 @@ nav a:hover{
     .hero_content button{
         font-size: x-large !important;
         padding: 10px !important;
-        margin-top:20px !important;
+        margin-top:10px !important;
     }
 }
-/* end hero section  */
+/* start feature section  */
+.feature {
+    margin-top: -100px;
+}
+.feature_content{
+    width: 100%;
+    min-height: 270px;
+    background-color: rgb(242, 242, 242);
+    font-family: Ubuntu;
+}
+.feature_content input {
+    background-color: #FFDDDD;
+}
+.feature_child{
+    width: 100px;
+}
+.feature_child h4 {
+    color: #483875;
+}
+.feature_child .font_family {
+    font-family: Raleway ;
+    font-weight: 500;
+}
+.feature_hosting{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-bottom: 30px;
+}
+.feature_content form input:focus{
+    background-color:#FFDDDD;
+    outline: none;
+    padding-left: 40px;
+    transition: all 1s;
+}
+@media screen and (max-width:768px) {
+    .feature_content form{
+        width: 100% !important;
+    }
+}
