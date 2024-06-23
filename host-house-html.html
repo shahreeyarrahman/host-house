@@ -1,13 +1,15 @@
+
 <!doctype html>
 <html lang="en">
     <head>
-        <title>git setup</title>
+        <title>host-house </title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <link rel="stylesheet" href="host-house-css.css">
 
         <!-- Bootstrap CSS v5.2.1 -->
         <link
@@ -20,15 +22,85 @@
 
     <body>
         <header>
-            <!-- place navbar here -->
-             <p>
-                Lorem ipsum dolor, sit amet condsdfsectetur adipisicing elit. Officia veritatis sequi blanditiis at temporibus nihil, molestiae atque totam. Accusamus, similique esse amet distinctio accusantium dicta! Sapiente, et aliquid facilis provident eos rem necessitatibus tempora esse nulla nostrum dolore nam dolores aperiam deserunt accusantium labore aspernatur enim nisi cupiditate! Repudiandae provident veniam fugit doloremque quisquam unde cumque sed ea, laboriosam ducimus in. Ducimus nobis modi voluptas alias molestias vel error, ipsam consequuntur reprehenderit iusto esse eligendi ea ipsa praesentium aperiam totam. Aperiam illo error dolorem. Provident dolore porro veniam hic, atque asperiores in suscipit maxime reprehenderit, facere soluta obcaecati sed officia.
-             </p>
-             <br> 
-             <p>
-                Lorem ipsum dolor, sit amet condsdfsectetur adipisicing elit. Officia veritatis sequi blanditiis at temporibus nihil, molestiae atque totam. Accusamus, similique esse amet distinctio accusantium dicta! Sapiente, et aliquid facilis provident eos rem necessitatibus tempora esse nulla nostrum dolore nam dolores aperiam deserunt accusantium labore aspernatur enim nisi cupiditate! Repudiandae provident veniam fugit doloremque quisquam unde cumque sed ea, laboriosam ducimus in. Ducimus nobis modi voluptas alias molestias vel error, ipsam consequuntur reprehenderit iusto esse eligendi ea ipsa praesentium aperiam totam. Aperiam illo error dolorem. Provident dolore porro veniam hic, atque asperiores in suscipit maxime reprehenderit, facere soluta obcaecati sed officia.
-             </p>
-             <h1> hello world </h1>
+            <!--start navbar -->
+            <div class="container">
+                <nav class="navbar navbar-expand-md fw-medium">
+                    <a class="navbar-brand" href="#">
+                        <img src="./host-house-logo.svg" alt="host-house-logo" width="120px">
+                    </a>
+                    <!-- collapse button  -->
+                    <button class="navbar-toggler float-left" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div  class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav text-nowrap text-capitalize ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  href="#">hosting </a>
+
+                            <ul class="dropdown-menu fw-medium text-dark">
+
+                                <li class="dropdown-item"><a href="#" class="nav-link">web hosting</a></li>
+                                <li class="dropdown-item"><a href="#" class="nav-link">resellar hosting </a></li>
+                                <li class="dropdown-item"><a href="#" class="nav-link">dedicated</a></li>
+                                <li class="dropdown-item"><a href="#" class="nav-link">VPS</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" href="#">domain</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">aboute us </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">contact us </a></li>
+
+                        <li class="nav-item"><a class="login_button btn py-1 px-3" 
+                            data-bs-toggle="modal" data-bs-target="#myModal" 
+                            href="#">log in</a></li>
+
+                            <!-- modal hear -->
+                            <div class="modal" id="myModal">
+                                <div class="modal-dialog modal-dialog-centered  ">
+                                  <div class="modal-content">
+                              
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                      <h4 class="modal-title fw-light ms-auto "> sign in </h4>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                              
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <form action="#">
+                                            <div class="form-floating mb-3 mt-3">
+                                              <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+                                              <label for="email">Email</label>
+                                            </div>
+                                            <div class="form-floating mt-3 mb-3 ">
+                                              <input type="text" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                                              <label for="pwd">Password</label>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary py-1">Login</button>
+                                          </form>
+                                    </div>
+                              
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-danger w-100 py-0" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                              
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- modal end -->
+
+
+
+                    </ul>
+                </div>
+                </nav>
+            </div>
+            <!--end navbar -->
+             
+            
         </header>
         <main></main>
         <footer>
