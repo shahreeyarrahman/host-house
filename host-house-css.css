@@ -6,6 +6,7 @@
 :root{
     --ubunto: Ubuntu ;
     --raleway:Raleway;
+    --primary:#483875 ;
 }
 
 *{
@@ -18,19 +19,19 @@ nav a {
     font-size: 12px !important;
 }
 nav .login_button{
-    background-color: #483875;
+    background-color: var(--primary);
     color: white;
     text-transform: uppercase;
     font-weight: bold;
 }
 nav .login_button:hover{
-    border: solid 1px #483875;
-    color:#483875 ;
+    border: solid 1px var(--primary);
+    color:var(--primary) ;
     text-transform: uppercase;
     font-weight: bold;
 }
 nav a:hover{
-    color: #483875 !important;
+    color: var(--primary) !important;
     letter-spacing: 1.5px;
     transition: all .5s;
     font-weight: bold;
@@ -96,7 +97,7 @@ nav a:hover{
     width: 100px;
 }
 .feature_child h4 {
-    color: #483875;
+    color: var(--primary);
 }
 .feature_child .font_family {
     font-family: Raleway ;
@@ -123,4 +124,51 @@ nav a:hover{
 /* start card section */
 #card{
     font-family: var(--ubunto);
+}
+/* start plan section  */
+.plan {
+    font-family: var(--ubunto);
+}
+.card-one{
+    width: auto;
+    min-height: 550px;
+    background-color: #ffffff;
+    border-radius: 25px 0px;
+    padding: 0px !important;
+}
+.plan .button-one {
+    background-color: var(--primary);
+    color: white;
+   
+}
+.plan .button-two {
+    border:solid 1px var(--primary);
+}
+.plan button:hover {
+    border:solid 1px var(--primary);
+}
+.card-one .p-text{
+    text-transform: capitalize;
+    font-size: small;
+}
+.card-one ul li {
+    text-transform: capitalize;
+    font-size: small;
+    padding: 4px;
+    list-style-type: none;
+    font-family: var(--raleway);
+}
+.card-one .card-one-bottm {
+    width: 100%;
+    border:none ;
+    padding: 10px;
+    border-radius: 0 0 25px 0px;
+    background-color: var(--primary);
+    color: white;
+    text-transform: capitalize;
+}
+/* end card one  */
+.card-premium{
+   background-color: #483875;
+   color: white;
 }
