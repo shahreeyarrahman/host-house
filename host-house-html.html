@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="host-house-css.css">
 
     <!-- Bootstrap CSS v5.2.1 -->
+
+ <!-- js link for map -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ <!-- js link for map -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 </head>
@@ -356,11 +361,112 @@
           </section>
          <!-- end-control pannel -->
 
+         <!-- start migrate section  -->
+          <section class="migrate">
+            <div class="container mb-4">
+                <div class="row">
+                    <div class="col-md-6 d-flex truck-image">
+                        <img src="./truck-imag.png" alt="" width="90%">
+                    </div>
+                    <div class="col-md-6 migrate_child2 ">
+                        <h5 class="text-center text-capitalize fw-bold text-justify p-3 pt-5"> migrate your site for FREE! </h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi magnam, totam debitis odio, laudantium consequuntur expedita accusantium inventore ducimus reiciendis maxime eveniet molestias perferendis harum, quisquam aperiam facilis quidem officiis.</p>
+                        <br> 
+                        <div class="view-button">
+                            <img src="./list-logo.svg" alt=""> <span class="fw-medium text-capitalize ps-3">
+                                 Migratio for any compatible server  </span> 
+                                 <button class="float-end text-capitalize btn py-0 px-3 "> view plan </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+         <!-- end  migrate section  -->
+
+         <!-- start locatio section  -->
+          <section class="location-section">
+            <div class="container">
+                <div class="location-text text-center text-capitalize">
+                    <h3 class="fw-bold pt-3">our data center location </h3>
+                    <p class="p-text">choose any location world wide data to store your content </p>
+                </div>
+            </div>
+            <div class="map mb-5">
+                
+                <div class="world-map">
+                    <img class="" src="./map-img.png" alt="map">
+                    <div class="pin Germany">
+                        <div class="spinner-grow spinner-grow-sm text-danger" 
+                         data-bs-toggle="tooltip" title="Germany" ></div>
+                    </div>
+                    <div class="pin india">
+                        <div class="spinner-grow spinner-grow-sm text-warning" 
+                         data-bs-toggle="tooltip" title="india"></div>
+                    </div>
+                    <div class="pin bangladesh">
+                        <div class="spinner-grow spinner-grow-sm text-primary" 
+                         data-bs-toggle="tooltip" title="Bangladesh"></div>
+                    </div>
+                    <div class="pin Russia">
+                        <div class="spinner-grow spinner-grow-sm text-secondary" 
+                        data-bs-toggle="tooltip" title="Russia"></div>
+                    </div>
+                    <div class="pin uk">
+                        <div class="spinner-grow spinner-grow-sm text-success" 
+                        data-bs-toggle="tooltip" title="UK"></div>
+                    </div>
+                    <div class="pin indonesia">
+                        <div class="spinner-grow spinner-grow-sm text-info" 
+                        data-bs-toggle="tooltip" title="Indonesia"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mb-5">
+                <div class="map-button">
+                    <div class="map_child">
+                        <button class="btn btn-outline-dark fw-bold">India</button>
+                    </div>
+                    <!--  -->
+                    <div class="map_child">
+                        <button class="btn btn-outline-dark fw-bold">Germany</button>
+                    </div>
+                    <!--  -->
+                    <div class="map_child">
+                        <button class="btn btn-outline-dark fw-bold">Russia </button>
+                    </div>
+                    <!--  -->
+                    <div class="map_child">
+                        <button class="btn btn-outline-dark fw-bold">Bangladesh </button>
+                    </div>
+                    <!--  -->
+                    <div class="map_child">
+                        <button class="btn btn-outline-dark fw-bold">Indonesia</button>
+                    </div>
+                    <!--  -->
+                    <div class="map_child">
+                        <button class="btn btn-outline-dark fw-bold">More...</button>
+                    </div>
+                    <!--  -->
+                </div>
+            </div>
+
+          </section>
+         <!-- end locatio section  -->
+
 
     <main></main>
     <footer>
         <!-- place footer here -->
     </footer>
+    <!-- map js  -->
+    <script>
+        // Initialize tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+        </script>
+    <!-- map js  -->
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

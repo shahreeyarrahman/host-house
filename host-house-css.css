@@ -229,3 +229,145 @@ nav a:hover{
     height: auto;
     padding-top: 40px;
 }
+/* start migrate section  */
+.migrate{
+    font-family: var(--ubunto);
+}
+.view-button button{
+    background-color: #F54646;
+    color: white;
+}
+.view-button button:hover{
+    color: #F54646;
+    border-color: #F54646;
+}
+.truck-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+   
+}
+@media screen and (max-width: 992px ) {
+    .view-button button {
+        width: 100%;
+        margin: 16px 0 ;
+    }
+    .migrate_child2{
+        padding: 0 100px;
+    }
+}
+
+/* map section started */
+.world-map{
+    width: 100%;
+    max-width: 1100px;
+    margin: 10px auto;
+    padding: 1em;
+    position: relative;
+  
+  }
+  .world-map img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .pin{
+   
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+  }
+  pin::before{
+    content:"";
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: puls 2s ease-in-out infinite;
+  }
+  .pin span {
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+    left: 2em;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: blueviolet;
+    border-radius: 3em;
+    padding: .5em .9em;
+    font-size: 1em;
+  }
+  .Germany {
+    top: 57%;
+    left: 17%;
+    cursor: pointer;
+  }
+  .india{
+    top: 80%;
+    left: 30%;
+    cursor: pointer;
+  }
+  .bangladesh{
+    top: 76%;
+    left: 34%;
+    cursor: pointer;
+  }
+  .Russia {
+    top: 44%;
+    left: 72%;
+    cursor: pointer;
+  }
+  .uk{
+    top: 44%;
+    left: 80%;
+    cursor: pointer;
+  }
+  .indonesia{
+    top: 81%;
+    left: 87%;
+    cursor: pointer;
+  }
+  /* Responsive map */
+  @media screen and (max-width:576px) {
+    .india{
+        top: 76%;
+        left: 29%;
+      }
+      .bangladesh{
+        top: 72%;
+        left: 33%;
+      }
+      .indonesia{
+        top: 78%;
+        left: 87%;
+      }
+  }
+  @media screen and (max-width:375px) {
+    .Germany {
+        top: 50%;
+        left: 17%;
+       
+      }
+      .bangladesh{
+        top: 68%;
+        left: 33%;
+      }
+      .indonesia{
+        top: 75%;
+        left: 85%;
+      }
+  }
+  .map-button{
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    /* finished map with responsive  */
