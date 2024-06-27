@@ -3,44 +3,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-:root{
-    --ubunto: Ubuntu ;
-    --raleway:Raleway;
-    --primary:#483875 ;
+:root {
+    --ubunto: Ubuntu;
+    --raleway: Raleway;
+    --primary: #483875;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 nav a {
-    font-family: Raleway ;
+    font-family: Raleway;
     font-size: 12px !important;
 }
-nav .login_button{
+
+nav .login_button {
     background-color: var(--primary);
     color: white;
     text-transform: uppercase;
     font-weight: bold;
 }
-nav .login_button:hover{
+
+nav .login_button:hover {
     border: solid 1px var(--primary);
-    color:var(--primary) ;
+    color: var(--primary);
     text-transform: uppercase;
     font-weight: bold;
 }
-nav a:hover{
+
+nav a:hover {
     color: var(--primary) !important;
     letter-spacing: 1.5px;
     transition: all .5s;
     font-weight: bold;
 }
-.dropdown-menu a{
-    padding:2px ;
+
+.dropdown-menu a {
+    padding: 2px;
 }
+
 /* start hero section */
-.hero{
+.hero {
     background: url(./hero-image.png) no-repeat;
     width: 100%;
     height: 100vh;
@@ -53,43 +59,48 @@ nav a:hover{
     font-family: "Ubuntu";
 }
 
-.hero_content button{
+.hero_content button {
     padding: 8px;
-    font-weight:500;
+    font-weight: 500;
     background-color: #FF6F6F;
     color: white;
-    
+    overflow: hidden;
+
 }
+
 @media screen and (max-width:768px) {
-    .hero{
+    .hero {
         height: 60vh;
     }
+
     .hero_content h1 {
         font-size: clamp(15px, 1vw, 100px);
         line-height: 20px;
     }
-    .hero_content button{
+
+    .hero_content button {
         font-size: 10px;
-        
-    }
-}
-@media screen and (min-width:768px) {
-    .hero_content button{
-        font-size: x-large !important;
-        padding: 10px !important;
-        margin-top:10px !important;
+
     }
 }
 
-.hover-effectbtn{
+@media screen and (min-width:768px) {
+    .hero_content button {
+        font-size: x-large !important;
+        padding: 10px !important;
+        margin-top: 10px !important;
+    }
+}
+
+.hover-effectbtn {
     position: relative;
 }
 
-.hover-effect-child{
+.hover-effect-child {
     position: absolute;
     width: 100%;
     height: 0%;
-    background-color:var(--primary);
+    background-color: var(--primary);
     top: 0;
     left: 0;
     border-radius: 6px;
@@ -98,66 +109,79 @@ nav a:hover{
     align-items: center;
     visibility: hidden;
 }
+
 .hover-effectbtn:hover .hover-effect-child {
     visibility: visible;
     height: 100%;
     transition: all .7s ease-in-out;
 }
-.hover-effectbtn:hover .visiblehidden{
+
+.hover-effectbtn:hover .visiblehidden {
     visibility: hidden;
-    
+
 }
 
 /* start feature section  */
 .feature {
     margin-top: -100px;
 }
-.feature_content{
+
+.feature_content {
     width: 100%;
     min-height: 270px;
     background-color: rgb(255, 255, 255);
     font-family: Ubuntu;
 }
+
 .feature_content input {
     background-color: #FFDDDD;
 }
-.feature_child{
+
+.feature_child {
     width: 100px;
 }
+
 .feature_child h4 {
     color: var(--primary);
 }
+
 .feature_child .font_family {
-    font-family: Raleway ;
+    font-family: Raleway;
     font-weight: 500;
 }
-.feature_hosting{
+
+.feature_hosting {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 16px;
     padding-bottom: 30px;
 }
-.feature_content form input:focus{
-    background-color:#FFDDDD;
+
+.feature_content form input:focus {
+    background-color: #FFDDDD;
     outline: none;
     padding-left: 40px;
     transition: all 1s;
 }
+
 @media screen and (max-width:768px) {
-    .feature_content form{
+    .feature_content form {
         width: 100% !important;
     }
 }
+
 /* start card section */
-#card{
+#card {
     font-family: var(--ubunto);
 }
+
 /* start plan section  */
 .plan {
     font-family: var(--ubunto);
 }
-.card-one{
+
+.card-one {
     width: 25%;
     height: 600px;
     background-color: #ffffff;
@@ -165,21 +189,26 @@ nav a:hover{
     padding: 0px !important;
     position: relative;
 }
+
 .plan .button-one {
     background-color: var(--primary);
     color: white;
-   
+
 }
+
 .plan .button-two {
-    border:solid 1px var(--primary);
+    border: solid 1px var(--primary);
 }
+
 .plan button:hover {
-    border:solid 1px var(--primary);
+    border: solid 1px var(--primary);
 }
-.card-one .p-text{
+
+.card-one .p-text {
     text-transform: capitalize;
     font-size: small;
 }
+
 .card-one ul li {
     text-transform: capitalize;
     font-size: small;
@@ -187,9 +216,10 @@ nav a:hover{
     list-style-type: none;
     font-family: var(--raleway);
 }
+
 .card-one .card-one-bottm {
     width: 100%;
-    border:none ;
+    border: none;
     padding: 10px;
     border-radius: 0 0 25px 0px;
     background-color: var(--primary);
@@ -199,8 +229,9 @@ nav a:hover{
     bottom: 0;
     left: 0;
 }
+
 /* start card two  */
-.card-two{
+.card-two {
     background-color: var(--primary);
     color: white;
     perspective: 100px;
@@ -213,102 +244,117 @@ nav a:hover{
     perspective: 100px;
     perspective-origin: left;
 }
-.card-two .box{
-    
+
+.card-two .box {
+
     width: 50px;
     height: 200px;
-    background-color:#F54646;
+    background-color: #F54646;
     transform: rotateZ(287deg) rotateX(31deg) rotateY(341deg);
     flex-shrink: 0;
     position: absolute;
     top: -60px;
     left: 20px;
-    
+
 }
-.card-two-bottom{
+
+.card-two-bottom {
     position: fixed;
     bottom: 0;
     left: 0;
     background-color: #F54646 !important;
 }
-.rotate-text{
-   position: absolute;
-   top: 30px;
-   left: -2px;
-   transform: rotate(-49deg);
+
+.rotate-text {
+    position: absolute;
+    top: 30px;
+    left: -2px;
+    transform: rotate(-49deg);
 }
+
 /* start control pannel */
-#control-pannel{
+#control-pannel {
     font-family: var(--ubunto);
 }
-.laptop-img{
+
+.laptop-img {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 @media screen and (max-width:768px) {
-    .pannel-card1{
+    .pannel-card1 {
         width: 100%;
     }
 }
-.laptop-main-img{
+
+.laptop-main-img {
     max-width: 500px;
     width: 100%;
     height: auto;
     padding-top: 40px;
 }
+
 /* start migrate section  */
-.migrate{
+.migrate {
     font-family: var(--ubunto);
 }
-.view-button button{
+
+.view-button button {
     background-color: #F54646;
     color: white;
 }
-.view-button button:hover{
+
+.view-button button:hover {
     color: #F54646;
     border-color: #F54646;
 }
-.truck-image{
+
+.truck-image {
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
-   
+
 }
-@media screen and (max-width: 992px ) {
+
+@media screen and (max-width: 992px) {
     .view-button button {
         width: 100%;
-        margin: 16px 0 ;
+        margin: 16px 0;
     }
-    .migrate_child2{
+
+    .migrate_child2 {
         padding: 0 100px;
     }
 }
 
 /* map section started */
-.world-map{
+.world-map {
     width: 100%;
     max-width: 1100px;
     margin: 10px auto;
     padding: 1em;
     position: relative;
-  
-  }
-  .world-map img {
+
+}
+
+.world-map img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-  }
-  .pin{
-   
+}
+
+.pin {
+
     position: absolute;
     width: 1em;
     height: 1em;
     border-radius: 50%;
-  }
+}
 
-  .pin span {
+.pin span {
     display: inline-block;
     white-space: nowrap;
     position: absolute;
@@ -319,76 +365,163 @@ nav a:hover{
     border-radius: 3em;
     padding: .5em .9em;
     font-size: 1em;
-  }
-  .Germany {
+}
+
+.Germany {
     top: 57%;
     left: 17%;
     cursor: pointer;
-  }
-  .india{
+}
+
+.india {
     top: 80%;
     left: 30%;
     cursor: pointer;
-  }
-  .bangladesh{
+}
+
+.bangladesh {
     top: 76%;
     left: 34%;
     cursor: pointer;
-  }
-  .Russia {
+}
+
+.Russia {
     top: 44%;
     left: 72%;
     cursor: pointer;
-  }
-  .uk{
+}
+
+.uk {
     top: 44%;
     left: 80%;
     cursor: pointer;
-  }
-  .indonesia{
+}
+
+.indonesia {
     top: 81%;
     left: 87%;
     cursor: pointer;
-  }
-  /* Responsive map */
-  @media screen and (max-width:576px) {
-    .india{
+}
+
+/* Responsive map */
+@media screen and (max-width:576px) {
+    .india {
         top: 76%;
         left: 29%;
-      }
-      .bangladesh{
+    }
+
+    .bangladesh {
         top: 72%;
         left: 33%;
-      }
-      .indonesia{
+    }
+
+    .indonesia {
         top: 78%;
         left: 87%;
-      }
-  }
-  @media screen and (max-width:375px) {
+    }
+}
+
+@media screen and (max-width:375px) {
     .Germany {
         top: 50%;
         left: 17%;
-       
-      }
-      .bangladesh{
+
+    }
+
+    .bangladesh {
         top: 68%;
         left: 33%;
-      }
-      .indonesia{
+    }
+
+    .indonesia {
         top: 75%;
         left: 85%;
-      }
-  }
-  .map-button{
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      align-items: center;
-      flex-wrap: wrap;
     }
-    /* finished map with responsive  */
-    /* start service section  */
-    .service{
-        font-family: var(--ubunto);
+}
+
+.map-button {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* finished map with responsive  */
+/* start service section  */
+.service {
+    font-family: var(--ubunto);
+}
+
+/* start customer section  */
+.customer {
+    font-family: var(--ubunto);
+}
+
+.customer-card {
+    background-color: var(--primary) !important;
+}
+
+.customer .customer-text {
+    color: var(--primary);
+}
+
+.ricky-jhon-text {
+    font-family: var(--raleway) !important;
+    font-size: small;
+}
+
+.rating {
+    font-family: var(--raleway);
+}
+
+/* start subscribe section  */
+.subscribe {
+    background: url(subscribe-img.png) no-repeat;
+    height: 300px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    font-family: var(--ubunto);
+}
+
+.subscribe-input span {
+    background-color: #483875;
+
+}
+
+@media screen and (max-width:768px) {
+    .subscribe-input input {
+        width: 100% !important;
     }
+
+    .subscribe-input span {
+        font-size: small !important;
+    }
+}
+
+/* start footer section  */
+.footer {
+    width: 100%;
+    min-height: 450px;
+    background-color: #160E2F;
+    font-family: var(--ubunto);
+}
+
+.footer_child1 {
+    width: 30%;
+    color: white;
+}
+
+.domain-service {
+    width: 20%;
+    color: white;
+    text-transform: capitalize;
+}
+
+.footer p {
+    color: rgb(168, 168, 168) !important;
+    text-align: start;
+
+}
+/* finished home page  */
