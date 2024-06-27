@@ -6,6 +6,8 @@
 :root {
     --ubunto: Ubuntu;
     --raleway: Raleway;
+    --primary-font: "Ubuntu";
+    --secondary-font: "Raleway";
     --primary: #483875;
 }
 
@@ -16,7 +18,7 @@
 }
 
 nav a {
-    font-family: Raleway;
+    font-family: var(--primary-font);
     font-size: 12px !important;
 }
 
@@ -126,7 +128,7 @@ nav a:hover {
     margin-top: -100px;
 }
 
-.feature_content {
+.domainPricings {
     width: 100%;
     min-height: 270px;
     background-color: rgb(255, 255, 255);
@@ -524,4 +526,5 @@ nav a:hover {
     text-align: start;
 
 }
+
 /* finished home page  */
