@@ -80,6 +80,34 @@ nav a:hover{
         margin-top:10px !important;
     }
 }
+
+.hover-effectbtn{
+    position: relative;
+}
+
+.hover-effect-child{
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    background-color:var(--primary);
+    top: 0;
+    left: 0;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.hover-effectbtn:hover .hover-effect-child {
+    visibility: visible;
+    height: 100%;
+    transition: all .7s ease-in-out;
+}
+.hover-effectbtn:hover .visiblehidden{
+    visibility: hidden;
+    
+}
+
 /* start feature section  */
 .feature {
     margin-top: -100px;
@@ -87,7 +115,7 @@ nav a:hover{
 .feature_content{
     width: 100%;
     min-height: 270px;
-    background-color: rgb(242, 242, 242);
+    background-color: rgb(255, 255, 255);
     font-family: Ubuntu;
 }
 .feature_content input {
@@ -279,18 +307,7 @@ nav a:hover{
     height: 1em;
     border-radius: 50%;
   }
-  pin::before{
-    content:"";
-    background-color: red;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    animation: puls 2s ease-in-out infinite;
-  }
+
   .pin span {
     display: inline-block;
     white-space: nowrap;
@@ -371,3 +388,7 @@ nav a:hover{
       flex-wrap: wrap;
     }
     /* finished map with responsive  */
+    /* start service section  */
+    .service{
+        font-family: var(--ubunto);
+    }

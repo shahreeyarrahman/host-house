@@ -1,480 +1,859 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <title>host-house </title>
+  <head>
+    <title>host-house</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="stylesheet" href="host-house-css.css">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="host-house-css.css" />
 
     <!-- Bootstrap CSS v5.2.1 -->
 
- <!-- js link for map -->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
- <!-- js link for map -->
+    <!-- js link for map -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- js link for map -->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
-        <!--start navbar -->
-        <section>
-            <div class="container">
-                <nav class="navbar navbar-expand-md fw-medium">
-                    <a class="navbar-brand" href="#">
-                        <img src="./host-house-logo.svg" alt="host-house-logo" width="120px">
-                    </a>
-                    <!-- collapse button  -->
-                    <button class="navbar-toggler float-left" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#mynavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="mynavbar">
-                        <ul class="navbar-nav text-nowrap text-capitalize ms-auto">
-                            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+  <body>
+    <!--start navbar -->
+    <section>
+      <div class="container">
+        <nav class="navbar navbar-expand-md fw-medium">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./host-house-logo.svg"
+              alt="host-house-logo"
+              width="120px"
+            />
+          </a>
+          <!-- collapse button  -->
+          <button
+            class="navbar-toggler float-left"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mynavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav text-nowrap text-capitalize ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
-                                    href="#">hosting
-                                </a>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  >hosting
+                </a>
 
-                                <ul class="dropdown-menu fw-medium text-dark">
+                <ul class="dropdown-menu fw-medium text-dark">
+                  <li class="dropdown-item">
+                    <a href="#" class="nav-link">web hosting</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#" class="nav-link">resellar hosting </a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#" class="nav-link">dedicated</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#" class="nav-link">VPS</a>
+                  </li>
+                </ul>
+              </li>
 
-                                    <li class="dropdown-item"><a href="#" class="nav-link">web hosting</a></li>
-                                    <li class="dropdown-item"><a href="#" class="nav-link">resellar hosting </a></li>
-                                    <li class="dropdown-item"><a href="#" class="nav-link">dedicated</a></li>
-                                    <li class="dropdown-item"><a href="#" class="nav-link">VPS</a></li>
-                                </ul>
-                            </li>
+              <li class="nav-item"><a class="nav-link" href="#">domain</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">aboute us </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">contact us </a>
+              </li>
 
-                            <li class="nav-item"><a class="nav-link" href="#">domain</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">aboute us </a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">contact us </a></li>
+              <li class="nav-item">
+                <a
+                  class="login_button btn py-1 px-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                  href="#"
+                  >log in</a
+                >
+              </li>
 
-                            <li class="nav-item"><a class="login_button btn py-1 px-3" data-bs-toggle="modal"
-                                    data-bs-target="#myModal" href="#">log in</a></li>
-
-                            <!-- modal hear -->
-                            <div class="modal" id="myModal">
-                                <div class="modal-dialog modal-dialog-centered  ">
-                                    <div class="modal-content">
-
-                                        <!-- Modal Header -->
-                                        <div class="modal-header">
-                                            <h4 class="modal-title fw-light ms-auto "> sign in </h4>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                                        </div>
-
-                                        <!-- Modal body -->
-                                        <div class="modal-body">
-                                            <form action="#">
-                                                <div class="form-floating mb-3 mt-3">
-                                                    <input type="text" class="form-control" id="email"
-                                                        placeholder="Enter email" name="email">
-                                                    <label for="email">Email</label>
-                                                </div>
-                                                <div class="form-floating mt-3 mb-3 ">
-                                                    <input type="text" class="form-control" id="pwd"
-                                                        placeholder="Enter password" name="pswd">
-                                                    <label for="pwd">Password</label>
-                                                </div>
-                                                <button type="submit" class="btn btn-primary py-1">Login</button>
-                                            </form>
-                                        </div>
-
-                                        <!-- Modal footer -->
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-danger w-100 py-0"
-                                                data-bs-dismiss="modal">Close</button>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- modal end -->
-                        </ul>
+              <!-- modal hear -->
+              <div class="modal" id="myModal">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title fw-light ms-auto">sign in</h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
                     </div>
-                </nav>
-            </div>
-        </section>
-        <!--end navbar -->
 
-        <!-- start hero section  -->
-        <section class="hero">
-            <div class="container">
-                    <div class="hero_content text-center">
-                        <h1 class=" fw-bold text-uppercase text-white"> frist & featured hosting plan <br> in
-                            your domain </h1>
-                        <button type="button" class="mt-1 rounded border-0 text-capitalize text-nowrap"> try to explore </button>
-                    </div>
-            </div>
-        </section>
-        <!-- end hero section  -->
-
-        <!-- start feature section -->
-         <section class="feature">
-            <div class="container mb-5">
-                <div class="feature_content shadow rounded mb-5">
-                    <h3 class="text-uppercase fw-bold text-center p-4">choose your domain </h3>
-
-                    <form class="w-75 m-auto" action="#">
-                        <div class="input-group mb-3">
-                          <input type="text" class="form-control" placeholder="Search your domain" name="email">
-                            <button style="background-color: #483875;" 
-                             class="input-group-text fw-medium p-3 text-light" > Search <img class="mx-3" src="./search-logo.svg" alt="" width="20px"></button>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      <form action="#">
+                        <div class="form-floating mb-3 mt-3">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="email"
+                            placeholder="Enter email"
+                            name="email"
+                          />
+                          <label for="email">Email</label>
                         </div>
+                        <div class="form-floating mt-3 mb-3">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="pwd"
+                            placeholder="Enter password"
+                            name="pswd"
+                          />
+                          <label for="pwd">Password</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary py-1">
+                          Login
+                        </button>
                       </form>
-
-                      <div class="feature_hosting"> 
-                        <div class="feature_child">
-                            <h4 class="text-center">.com</h4>
-                            <div class="text-center font_family">
-                                <span class="fw-bold text-danger fs-5">$</span> 9.99/Year
-                            </div>
-                        </div>
-                        <!--  -->
-                        <div class="feature_child">
-                            <h4 class="text-center">.org</h4>
-                            <div class="text-center font_family">
-                                <span class="fw-bold text-danger fs-5">$</span> 6.99/Year
-                            </div>
-                        </div>
-                        <!--  -->
-                        <div class="feature_child">
-                            <h4 class="text-center">.net</h4>
-                            <div class="text-center font_family">
-                                <span class="fw-bold text-danger fs-5">$</span> 7.99/Year
-                            </div>
-                        </div>
-                        <!--  -->
-                        <div class="feature_child">
-                            <h4 class="text-center">.xyz</h4>
-                            <div class="text-center font_family">
-                                <span class="fw-bold text-danger fs-5">$</span> 8.99/Year
-                            </div>
-                        </div>
-                        <!--  -->
-                        <div class="feature_child">
-                            <h4 class="text-center">.biz</h4>
-                            <div class="text-center font_family">
-                                <span class="fw-bold text-danger fs-5">$</span> 8.99/Year
-                            </div>
-                        </div>
-                        <!--  -->
-                        
-                      </div>
-                </div>
-            </div>
-         </section>
-        <!-- end feature section -->
-
-        <!-- start card section  -->
-         <section id="card">
-            <div class="container mb-5">
-                <div class="row">
-                    <div class="col-lg-4 mt-5 col-md-6">
-                        <div class="card border-0 text-center">
-                            <img class="card-img-top m-auto p-4 " src="./shild-logo.svg" 
-                            alt="Card image" style="width:105px">
-                            <div class="card-body">
-                              <h4 class=" p-3 card-title fw-bold">Maximum Security</h4>
-                              <p class="card-text">Some example text some example text. John Doe is an architect and engineer Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aut atque fugiat sequi saepe vero animi rem reprehenderit inventore. Labore.</p>
-                            </div>
-                          </div>
                     </div>
-                    <!--  -->
-                    <div class="col-lg-4 mt-5 col-md-6">
-                        <div class="card border-0 text-center">
-                            <img class="card-img-top m-auto " src="./Launching-logo.svg" 
-                            alt="Card image" style="width:70px">
-                            <div class="card-body">
-                              <h4 class=" p-3 card-title fw-bold">Super Fast Speed</h4>
-                              <p class="card-text">Some example text some example text. John Doe is an architect and engineer Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aut atque fugiat sequi saepe vero animi rem reprehenderit inventore. Labore.</p>
-                            </div>
-                          </div>
-                    </div>
-                    <!--  -->
-                    <div class="col-lg-4 mt-5 col-md-6">
-                        <div class="card border-0 text-center">
-                            <img class="card-img-top m-auto p-4" src="./headphone-logo.svg" 
-                            alt="Card image" style="width:105px">
-                            <div class="card-body">
-                              <h4 class=" p-3 card-title fw-bold">24/7 Supported </h4>
-                              <p class="card-text">Some example text some example text. John Doe is an architect and engineer Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aut atque fugiat sequi saepe vero animi rem reprehenderit inventore. Labore.</p>
-                            </div>
-                          </div>
-                    </div>
-                    <!--  -->
-                </div>
-            </div>
-         </section>
-        <!-- end card section  -->
 
-        <!-- start hosting plan section  -->
-         <section class="plan">
-            <div class="container mb-5">
-                <div class="plan_text text-center text-capitalize"> 
-                <h3 class="fw-bold"> web hosting plan </h3>
-                <p class="mb-4"> choose your own plan </p>
-
-                <div class="btn-group btn-group-sm mb-5">
-                    <button type="button" class="btn button-one py-0">Monthly</button>
-                    <button type="button" class="btn button-two py-0">Yearly</button>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-danger w-100 py-0"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
                   </div>
                 </div>
-            
+              </div>
+              <!-- modal end -->
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <!--end navbar -->
+
+    <!-- start hero section  -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero_content text-center">
+          <h1 class="fw-bold text-uppercase text-white">
+            frist & featured hosting plan <br />
+            in your domain
+          </h1>
+          <button
+            type="button"
+            class="mt-1 rounded border-0 text-capitalize text-nowrap hover-effectbtn"
+          >
+            <span class="visiblehidden"> try to explore </span>
+            <div class="hover-effect-child">try to explore</div>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- end hero section  -->
+
+    <!-- start feature section -->
+    <section class="feature">
+      <div class="container mb-5">
+        <div class="feature_content shadow rounded mb-5">
+          <h3 class="text-uppercase fw-bold text-center p-4">
+            choose your domain
+          </h3>
+
+          <form class="w-75 m-auto" action="#">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search your domain"
+                name="email"
+              />
+              <button
+                style="background-color: #483875"
+                class="input-group-text fw-medium p-3 text-light"
+              >
+                Search
+                <img class="mx-3" src="./search-logo.svg" alt="" width="20px" />
+              </button>
+            </div>
+          </form>
+
+          <div class="feature_hosting">
+            <div class="feature_child">
+              <h4 class="text-center">.com</h4>
+              <div class="text-center font_family">
+                <span class="fw-bold text-danger fs-5">$</span> 9.99/Year
+              </div>
+            </div>
+            <!--  -->
+            <div class="feature_child">
+              <h4 class="text-center">.org</h4>
+              <div class="text-center font_family">
+                <span class="fw-bold text-danger fs-5">$</span> 6.99/Year
+              </div>
+            </div>
+            <!--  -->
+            <div class="feature_child">
+              <h4 class="text-center">.net</h4>
+              <div class="text-center font_family">
+                <span class="fw-bold text-danger fs-5">$</span> 7.99/Year
+              </div>
+            </div>
+            <!--  -->
+            <div class="feature_child">
+              <h4 class="text-center">.xyz</h4>
+              <div class="text-center font_family">
+                <span class="fw-bold text-danger fs-5">$</span> 8.99/Year
+              </div>
+            </div>
+            <!--  -->
+            <div class="feature_child">
+              <h4 class="text-center">.biz</h4>
+              <div class="text-center font_family">
+                <span class="fw-bold text-danger fs-5">$</span> 8.99/Year
+              </div>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end feature section -->
+
+    <!-- start card section  -->
+    <section id="card">
+      <div class="container mb-5">
+        <div class="row">
+          <div class="col-lg-4 mt-5 col-md-6">
+            <div class="card border-0 text-center">
+              <img
+                class="card-img-top m-auto p-4"
+                src="./shild-logo.svg"
+                alt="Card image"
+                style="width: 105px"
+              />
+              <div class="card-body">
+                <h4 class="p-3 card-title fw-bold">Maximum Security</h4>
+                <p class="card-text">
+                  Some example text some example text. John Doe is an architect
+                  and engineer Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Molestiae aut atque fugiat sequi saepe vero
+                  animi rem reprehenderit inventore. Labore.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col-lg-4 mt-5 col-md-6">
+            <div class="card border-0 text-center">
+              <img
+                class="card-img-top m-auto"
+                src="./Launching-logo.svg"
+                alt="Card image"
+                style="width: 70px"
+              />
+              <div class="card-body">
+                <h4 class="p-3 card-title fw-bold">Super Fast Speed</h4>
+                <p class="card-text">
+                  Some example text some example text. John Doe is an architect
+                  and engineer Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Molestiae aut atque fugiat sequi saepe vero
+                  animi rem reprehenderit inventore. Labore.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col-lg-4 mt-5 col-md-6">
+            <div class="card border-0 text-center">
+              <img
+                class="card-img-top m-auto p-4"
+                src="./headphone-logo.svg"
+                alt="Card image"
+                style="width: 105px"
+              />
+              <div class="card-body">
+                <h4 class="p-3 card-title fw-bold">24/7 Supported</h4>
+                <p class="card-text">
+                  Some example text some example text. John Doe is an architect
+                  and engineer Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Molestiae aut atque fugiat sequi saepe vero
+                  animi rem reprehenderit inventore. Labore.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </section>
+    <!-- end card section  -->
+
+    <!-- start hosting plan section  -->
+    <section class="plan">
+      <div class="container mb-5">
+        <div class="plan_text text-center text-capitalize">
+          <h3 class="fw-bold">web hosting plan</h3>
+          <p class="mb-4">choose your own plan</p>
+
+          <div class="btn-group btn-group-sm mb-5">
+            <button type="button" class="btn button-one py-0">Monthly</button>
+            <button type="button" class="btn button-two py-0">Yearly</button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div
+            class="col-lg-4 col-md-6 mt-5 mb-5 card-one text-center border shadow"
+          >
+            <h4 class="pt-4 fw-bold">Standard</h4>
+            <p class="p-text mb-4">the plan is ideal to get started</p>
+            <p class="mb-4">
+              <span class="fw-bold fs-4 text-danger">$</span>
+              <span class="fs-4 fw-bold">5.99</span>
+              <sub class="fw-medium">/Per Month</sub>
+            </p>
+            <hr class="mx-5 text-secondary" />
+            <p class="fw-medium mb-4">Features</p>
+            <ul class="text-start ms-5 mb-5">
+              <li>
+                <img class="me-3" src="./list-logo.svg" alt="" width="13px" /> 3
+                GB SSD storage
+              </li>
+              <li>
+                <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                500 GB Brandwidth
+              </li>
+              <li>
+                <img class="me-3" src="./list-logo.svg" alt="" width="13px" /> 3
+                Website
+              </li>
+              <li>
+                <img class="me-3" src="./list-logo.svg" alt="" width="13px" /> 5
+                mail accounts
+              </li>
+              <li>
+                <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                premium SSL certificate
+              </li>
+              <li>
+                <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                auto backup & cloud storage
+              </li>
+              <li>
+                <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                website toolkit
+              </li>
+              <li>
+                <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                security shild
+              </li>
+              <li>
+                <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                advanced featured
+              </li>
+              <li>
+                <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                24/7 support
+              </li>
+            </ul>
+            <button class="card-one-bottm fw-medium">get started</button>
+          </div>
+
+          <!-- end card-one -->
+
+          <div
+            class="col-lg-4 col-md-6 px-2 card-one card-two text-center border shadow"
+          >
+            <div class="box"></div>
+            <span class="rotate-text"> Most Populer </span>
+            <h4 class="pt-5 fw-bold">Premium</h4>
+            <p class="p-text mb-4">the plan is ideal to get started</p>
+            <p class="mb-4">
+              <span class="fw-bold fs-4 text-danger">$</span>
+              <span class="fs-4 fw-bold">6.99</span>
+              <sub class="fw-medium">/Per Month</sub>
+            </p>
+            <hr class="mx-5 text-secondary" />
+            <p class="fw-medium mb-4">Features</p>
+            <ul class="text-start ms-5 mb-5">
+              <li>
+                <img class="me-3" src="./list-logo.svg" alt="" width="13px" /> 3
+                GB SSD storage
+              </li>
+              <li>
+                <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                500 GB Brandwidth
+              </li>
+              <li>
+                <img class="me-3" src="./list-logo.svg" alt="" width="13px" /> 3
+                Website
+              </li>
+              <li>
+                <img class="me-3" src="./list-logo.svg" alt="" width="13px" /> 5
+                mail accounts
+              </li>
+              <li>
+                <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                premium SSL certificate
+              </li>
+              <li>
+                <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                auto backup & cloud storage
+              </li>
+              <li>
+                <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                website toolkit
+              </li>
+              <li>
+                <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                security shild
+              </li>
+              <li>
+                <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                advanced featured
+              </li>
+              <li>
+                <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                24/7 support
+              </li>
+            </ul>
+            <button class="card-one-bottm fw-medium card-two-bottom">
+              get started
+            </button>
+          </div>
+
+          <!--  end card-two -->
+
+          <div
+            class="col-lg-4 col-md-6 mt-5 card-one text-center border shadow"
+          >
+            <h4 class="pt-4 fw-bold">Unlimited</h4>
+            <p class="p-text mb-4">the plan is ideal to get started</p>
+            <p class="mb-4">
+              <span class="fw-bold fs-4 text-danger">$</span>
+              <span class="fs-4 fw-bold">9.99</span>
+              <sub class="fw-medium">/Per Month</sub>
+            </p>
+            <hr class="mx-5 text-secondary" />
+            <p class="fw-medium mb-4">Features</p>
+            <ul class="text-start ms-5 mb-5">
+              <li>
+                <img class="me-3" src="./list-logo.svg" alt="" width="13px" /> 3
+                GB SSD storage
+              </li>
+              <li>
+                <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                500 GB Brandwidth
+              </li>
+              <li>
+                <img class="me-3" src="./list-logo.svg" alt="" width="13px" /> 3
+                Website
+              </li>
+              <li>
+                <img class="me-3" src="./list-logo.svg" alt="" width="13px" /> 5
+                mail accounts
+              </li>
+              <li>
+                <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                premium SSL certificate
+              </li>
+              <li>
+                <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                auto backup & cloud storage
+              </li>
+              <li>
+                <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                website toolkit
+              </li>
+              <li>
+                <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                security shild
+              </li>
+              <li>
+                <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                advanced featured
+              </li>
+              <li>
+                <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                24/7 support
+              </li>
+            </ul>
+            <button class="card-one-bottm fw-medium">get started</button>
+          </div>
+
+          <!-- end card-three -->
+        </div>
+        <div class="text-center mt-4">
+          <a class="fw-medium text-dark" href=""> See More </a>
+        </div>
+      </div>
+    </section>
+    <!-- end hosting plan section ****************gap problem   -->
+
+    <!-- start-control pannel -->
+    <section id="control-pannel">
+      <div class="container mb-5">
+        <div class="control-pannel-content text-center text-capitalize">
+          <h3 class="fw-bold">user - frindly control pannel</h3>
+          <p>
+            supply 24/365 web service with customer directed method of
+            empowerment
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="column">
+              <div class="pannel-card1">
+                <div class="card border-0 text-center">
+                  <img
+                    class="card-img-top m-auto p-4"
+                    src="./bulb-icon.svg"
+                    alt="Card image"
+                    style="width: 105px"
+                  />
+                  <div class="card-body">
+                    <h4 class="p-3 card-title fw-bold">Easy to Used</h4>
+                    <p class="card-text">
+                      Some example text some example text. John Doe is an
+                      architect and engineer Lorem ipsum dolor sit amet
+                      consectetur adipisicing elit. Molestiae aut atque fugiat
+                      sequi saepe vero animi rem reprehenderit inventore.
+                      Labore.
+                    </p>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="card border-0 text-center">
+                  <img
+                    class="card-img-top m-auto p-4"
+                    src="./power-house-icone.svg"
+                    alt="Card image"
+                    style="width: 105px"
+                  />
+                  <div class="card-body">
+                    <h4 class="p-3 card-title fw-bold">Powerfull Hosting</h4>
+                    <p class="card-text">
+                      Some example text some example text. John Doe is an
+                      architect and engineer Lorem ipsum dolor sit amet
+                      consectetur adipisicing elit. Molestiae aut atque fugiat
+                      sequi saepe vero animi rem reprehenderit inventore.
+                      Labore.
+                    </p>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="card border-0 text-center">
+                  <img
+                    class="card-img-top m-auto p-4"
+                    src="manegment-icon.svg"
+                    alt="Card image"
+                    style="width: 105px"
+                  />
+                  <div class="card-body">
+                    <h4 class="p-3 card-title fw-bold">Easy Manegment</h4>
+                    <p class="card-text">
+                      Some example text some example text. John Doe is an
+                      architect and engineer Lorem ipsum dolor sit amet
+                      consectetur adipisicing elit. Molestiae aut atque fugiat
+                      sequi saepe vero animi rem reprehenderit inventore.
+                      Labore.
+                    </p>
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 laptop-img">
+            <img
+              style=""
+              src="./laptop-img.png"
+              alt=""
+              class="laptop-main-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end-control pannel -->
+
+    <!-- start migrate section  -->
+    <section class="migrate">
+      <div class="container mb-4">
+        <div class="row">
+          <div class="col-md-6 d-flex truck-image">
+            <img src="./truck-imag.png" alt="" width="90%" />
+          </div>
+          <div class="col-md-6 migrate_child2">
+            <h5
+              class="text-center text-capitalize fw-bold text-justify p-3 pt-5"
+            >
+              migrate your site for FREE!
+            </h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+              magnam, totam debitis odio, laudantium consequuntur expedita
+              accusantium inventore ducimus reiciendis maxime eveniet molestias
+              perferendis harum, quisquam aperiam facilis quidem officiis.
+            </p>
+            <br />
+            <div class="view-button">
+              <img src="./list-logo.svg" alt="" />
+              <span class="fw-medium text-capitalize ps-3">
+                Migratio for any compatible server
+              </span>
+              <button class="float-end text-capitalize btn py-0 px-3">
+                view plan
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end  migrate section  -->
+
+    <!-- start locatio section  -->
+    <section class="location-section">
+      <div class="container">
+        <div class="location-text text-center text-capitalize">
+          <h3 class="fw-bold pt-3">our data center location</h3>
+          <p class="p-text">
+            choose any location world wide data to store your content
+          </p>
+        </div>
+      </div>
+      <div class="map mb-5">
+        <div class="world-map">
+          <img class="" src="./map-img.png" alt="map" />
+          <div class="pin Germany">
+            <div
+              class="spinner-grow spinner-grow-sm text-danger"
+              data-bs-toggle="tooltip"
+              title="Germany"
+            ></div>
+          </div>
+          <div class="pin india">
+            <div
+              class="spinner-grow spinner-grow-sm text-warning"
+              data-bs-toggle="tooltip"
+              title="india"
+            ></div>
+          </div>
+          <div class="pin bangladesh">
+            <div
+              class="spinner-grow spinner-grow-sm text-primary"
+              data-bs-toggle="tooltip"
+              title="Bangladesh"
+            ></div>
+          </div>
+          <div class="pin Russia">
+            <div
+              class="spinner-grow spinner-grow-sm text-secondary"
+              data-bs-toggle="tooltip"
+              title="Russia"
+            ></div>
+          </div>
+          <div class="pin uk">
+            <div
+              class="spinner-grow spinner-grow-sm text-success"
+              data-bs-toggle="tooltip"
+              title="UK"
+            ></div>
+          </div>
+          <div class="pin indonesia">
+            <div
+              class="spinner-grow spinner-grow-sm text-info"
+              data-bs-toggle="tooltip"
+              title="Indonesia"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <div class="container mb-5">
+        <div class="map-button">
+          <div class="map_child">
+            <button class="btn btn-outline-dark fw-bold">India</button>
+          </div>
+          <!--  -->
+          <div class="map_child">
+            <button class="btn btn-outline-dark fw-bold">Germany</button>
+          </div>
+          <!--  -->
+          <div class="map_child">
+            <button class="btn btn-outline-dark fw-bold">Russia</button>
+          </div>
+          <!--  -->
+          <div class="map_child">
+            <button class="btn btn-outline-dark fw-bold">Bangladesh</button>
+          </div>
+          <!--  -->
+          <div class="map_child">
+            <button class="btn btn-outline-dark fw-bold">Indonesia</button>
+          </div>
+          <!--  -->
+          <div class="map_child">
+            <button class="btn btn-outline-dark fw-bold">More...</button>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </section>
+    <!-- end location section  -->
+
+    <!-- start service section  -->
+     <section class="service">
+        <div class="container pt-5 mb-5">
+            <div class="service_text text-center">
+                <h3 class="fw-bold"> Host House Special </h3>
+                <p>Feature and service</p>
+            </div>
+
             <div class="row">
-               
-                <div class="col-lg-4 col-md-6 mt-5 mb-5 card-one text-center border shadow">
-                    <h4 class="pt-4 fw-bold">Standard</h4>
-                    <p class="p-text mb-4">the plan is ideal to get started</p>
-                    <p class="mb-4"> <span class="fw-bold fs-4 text-danger ">$</span>
-                         <span class="fs-4 fw-bold">5.99</span> <sub class="fw-medium">/Per Month</sub> </p>
-                         <hr class="mx-5 text-secondary">
-                         <p class="fw-medium mb-4"> Features </p>
-                         <ul class="text-start ms-5 mb-5" >
-                            <li> <img class="me-3" src="./list-logo.svg" alt="" width="13px"> 3 GB SSD storage</li>
-                            <li> <img class="me-3" src="./list-logo.svg" alt="" width="13px"> 500 GB Brandwidth</li>
-                            <li> <img class="me-3" src="./list-logo.svg" alt="" width="13px"> 3 Website</li>
-                            <li> <img class="me-3" src="./list-logo.svg" alt="" width="13px"> 5 mail accounts </li>
-                            <li> <img class="me-3" src="./list-logo.svg" alt="" width="13px"> premium SSL certificate</li>
-                            <li> <img class="me-3" src="./list-logo.svg" alt="" width="13px"> auto backup & cloud storage </li>
-                            <li> <img class="me-3" src="./list-logo.svg" alt="" width="13px"> website toolkit </li>
-                            <li> <img class="me-3" src="./list-logo.svg" alt="" width="13px"> security shild </li>
-                            <li> <img class="me-3" src="./list-logo.svg" alt="" width="13px"> advanced featured</li>
-                            <li> <img class="me-3" src="./list-logo.svg" alt="" width="13px"> 24/7 support</li>
-                         </ul>
-                         <button class="card-one-bottm fw-medium">get started</button>
-                </div>
-           
-                <!-- end card-one -->
-                 
-                <div class="col-lg-4 col-md-6 px-2 card-one card-two text-center border shadow">
-
-                    <div class="box"> </div>
-                    <span class="rotate-text"> Most Populer </span>
-                    <h4 class="pt-5 fw-bold">Premium</h4>
-                    <p class="p-text mb-4">the plan is ideal to get started</p>
-                    <p class="mb-4"> <span class="fw-bold fs-4 text-danger ">$</span>
-                         <span class="fs-4 fw-bold">6.99</span> <sub class="fw-medium">/Per Month</sub> </p>
-                         <hr class="mx-5 text-secondary">
-                         <p class="fw-medium mb-4"> Features </p>
-                         <ul class="text-start ms-5 mb-5" >
-                            <li> <img class="me-3" src="./list-logo.svg" alt="" width="13px"> 3 GB SSD storage</li>
-                            <li> <img class="me-3" src="./list-logo.svg" alt="" width="13px"> 500 GB Brandwidth</li>
-                            <li> <img class="me-3" src="./list-logo.svg" alt="" width="13px"> 3 Website</li>
-                            <li> <img class="me-3" src="./list-logo.svg" alt="" width="13px"> 5 mail accounts </li>
-                            <li> <img class="me-3" src="./list-logo.svg" alt="" width="13px"> premium SSL certificate</li>
-                            <li> <img class="me-3" src="./list-logo.svg" alt="" width="13px"> auto backup & cloud storage </li>
-                            <li> <img class="me-3" src="./list-logo.svg" alt="" width="13px"> website toolkit </li>
-                            <li> <img class="me-3" src="./list-logo.svg" alt="" width="13px"> security shild </li>
-                            <li> <img class="me-3" src="./list-logo.svg" alt="" width="13px"> advanced featured</li>
-                            <li> <img class="me-3" src="./list-logo.svg" alt="" width="13px"> 24/7 support</li>
-                         </ul>
-                         <button class="card-one-bottm fw-medium card-two-bottom">get started</button>
-                </div>
-            
-                 <!--  end card-two -->
-                   
-                 <div class="col-lg-4 col-md-6 mt-5 card-one text-center border shadow">
-                    <h4 class="pt-4 fw-bold">Unlimited</h4>
-                    <p class="p-text mb-4">the plan is ideal to get started</p>
-                    <p class="mb-4"> <span class="fw-bold fs-4 text-danger ">$</span>
-                         <span class="fs-4 fw-bold">9.99</span> <sub class="fw-medium">/Per Month</sub> </p>
-                         <hr class="mx-5 text-secondary">
-                         <p class="fw-medium mb-4"> Features </p>
-                         <ul class="text-start ms-5 mb-5" >
-                            <li> <img class="me-3" src="./list-logo.svg" alt="" width="13px"> 3 GB SSD storage</li>
-                            <li> <img class="me-3" src="./list-logo.svg" alt="" width="13px"> 500 GB Brandwidth</li>
-                            <li> <img class="me-3" src="./list-logo.svg" alt="" width="13px"> 3 Website</li>
-                            <li> <img class="me-3" src="./list-logo.svg" alt="" width="13px"> 5 mail accounts </li>
-                            <li> <img class="me-3" src="./list-logo.svg" alt="" width="13px"> premium SSL certificate</li>
-                            <li> <img class="me-3" src="./list-logo.svg" alt="" width="13px"> auto backup & cloud storage </li>
-                            <li> <img class="me-3" src="./list-logo.svg" alt="" width="13px"> website toolkit </li>
-                            <li> <img class="me-3" src="./list-logo.svg" alt="" width="13px"> security shild </li>
-                            <li> <img class="me-3" src="./list-logo.svg" alt="" width="13px"> advanced featured</li>
-                            <li> <img class="me-3" src="./list-logo.svg" alt="" width="13px"> 24/7 support</li>
-                         </ul>
-                         <button class="card-one-bottm fw-medium">get started</button>
-                </div>
-            
-                   <!-- end card-three -->
-                
+                <div class="col-lg-3 mt-5 col-md-6">
+                    <div class="card border-0 text-center">
+                      <img
+                        class="card-img-top m-auto p-4"
+                        src="./service-shil-icone.svg"
+                        alt="Card image"
+                        style="width: 115px"
+                      />
+                      <div class="card-body">
+                        <h5 class="pb-3 pt-1 card-title fw-bold">Rock - Solid Security</h5>
+                        <p class="card-text">
+                          Some example text some example text. John Doe is an architect
+                           consectetur
+                          adipisicing elit. Molestiae Labore.
+                        </p>
+                      </div>
+                      <div class="service-img text-center">
+                        <img src="next-icone.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="col-lg-3 mt-5 col-md-6">
+                    <div class="card border-0 text-center">
+                      <img
+                        class="card-img-top m-auto p-4"
+                        src="./service-bankcard-icon.svg"
+                        alt="Card image"
+                        style="width: 137px"
+                      />
+                      <div class="card-body">
+                        <h5 class="p-3 card-title fw-bold">100% Moneyback Gurantee</h5>
+                        <p class="card-text">
+                          Some example text some example text. John Doe is an architect
+                           consectetur
+                          adipisicing elit. Molestiae Labore.
+                        </p>
+                      </div>
+                      <div class="service-img text-center">
+                        <img src="next-icone.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="col-lg-3 mt-5 col-md-6">
+                    <div class="card border-0 text-center">
+                      <img
+                        class="card-img-top m-auto p-4"
+                        src="./service-speed-metar.svg"
+                        alt="Card image"
+                        style="width: 135px"
+                      />
+                      <div class="card-body">
+                        <h5 class="p-3 card-title fw-bold">High Performance</h5>
+                        <p class="card-text">
+                          Some example text some example text. John Doe is an architect
+                           consectetur
+                          adipisicing elit. Molestiae Labore.
+                        </p>
+                      </div>
+                      <div class="service-img text-center">
+                        <img src="next-icone.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="col-lg-3 mt-5 col-md-6">
+                    <div class="card border-0 text-center">
+                      <img
+                        class="card-img-top m-auto p-4"
+                        src="./service-file-manger.svg"
+                        alt="Card image"
+                        style="width: 115px"
+                      />
+                      <div class="card-body">
+                        <h5 class="p-3 card-title fw-bold">Smooth Data Transfer</h5>
+                        <p class="card-text">
+                          Some example text some example text. John Doe is an architect
+                          consectetur
+                          adipisicing elit. Molestiae Labore.
+                        </p>
+                      </div>
+                      <div class="service-img text-center">
+                        <img src="next-icone.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
             </div>
-            <div class="text-center mt-4">
-                <a class="fw-medium text-dark" href=""> See More </a>
-            </div>
-            </div>
-         </section>
-        <!-- end hosting plan section ****************gap problem   -->
+        </div>
 
-         <!-- start-control pannel -->
-          <section id="control-pannel">
-            <div class="container mb-5">
-                <div class="control-pannel-content text-center text-capitalize">
-                    <h3 class="fw-bold"> user - frindly control pannel </h3>
-                    <p>supply 24/365 web service with customer directed method of empowerment</p>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="column">
-                            <div class="pannel-card1">
-
-                                <div class="card border-0 text-center">
-                                    <img class="card-img-top m-auto p-4 " src="./bulb-icon.svg" 
-                                    alt="Card image" style="width:105px">
-                                    <div class="card-body">
-                                      <h4 class=" p-3 card-title fw-bold">Easy to Used</h4>
-                                      <p class="card-text">Some example text some example text. John Doe is an architect and engineer Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aut atque fugiat sequi saepe vero animi rem reprehenderit inventore. Labore.</p>
-                                    </div>
-                                  </div>
-                                  <!--  -->
-                                  <div class="card border-0 text-center">
-                                    <img class="card-img-top m-auto p-4 " src="./power-house-icone.svg" 
-                                    alt="Card image" style="width:105px">
-                                    <div class="card-body">
-                                      <h4 class=" p-3 card-title fw-bold">Powerfull Hosting </h4>
-                                      <p class="card-text">Some example text some example text. John Doe is an architect and engineer Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aut atque fugiat sequi saepe vero animi rem reprehenderit inventore. Labore.</p>
-                                    </div>
-                                  </div>
-                                  <!--  -->
-                                  <div class="card border-0 text-center">
-                                    <img class="card-img-top m-auto p-4 " src="manegment-icon.svg" 
-                                    alt="Card image" style="width:105px">
-                                    <div class="card-body">
-                                      <h4 class=" p-3 card-title fw-bold">Easy Manegment</h4>
-                                      <p class="card-text">Some example text some example text. John Doe is an architect and engineer Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aut atque fugiat sequi saepe vero animi rem reprehenderit inventore. Labore.</p>
-                                    </div>
-                                  </div>
-                                  <!--  -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 laptop-img">
-                        <img style="" src="./laptop-img.png" alt="" class="laptop-main-img">
-                    </div>
-                </div>
-            </div>
-
-          </section>
-         <!-- end-control pannel -->
-
-         <!-- start migrate section  -->
-          <section class="migrate">
-            <div class="container mb-4">
-                <div class="row">
-                    <div class="col-md-6 d-flex truck-image">
-                        <img src="./truck-imag.png" alt="" width="90%">
-                    </div>
-                    <div class="col-md-6 migrate_child2 ">
-                        <h5 class="text-center text-capitalize fw-bold text-justify p-3 pt-5"> migrate your site for FREE! </h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi magnam, totam debitis odio, laudantium consequuntur expedita accusantium inventore ducimus reiciendis maxime eveniet molestias perferendis harum, quisquam aperiam facilis quidem officiis.</p>
-                        <br> 
-                        <div class="view-button">
-                            <img src="./list-logo.svg" alt=""> <span class="fw-medium text-capitalize ps-3">
-                                 Migratio for any compatible server  </span> 
-                                 <button class="float-end text-capitalize btn py-0 px-3 "> view plan </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </section>
-         <!-- end  migrate section  -->
-
-         <!-- start locatio section  -->
-          <section class="location-section">
-            <div class="container">
-                <div class="location-text text-center text-capitalize">
-                    <h3 class="fw-bold pt-3">our data center location </h3>
-                    <p class="p-text">choose any location world wide data to store your content </p>
-                </div>
-            </div>
-            <div class="map mb-5">
-                
-                <div class="world-map">
-                    <img class="" src="./map-img.png" alt="map">
-                    <div class="pin Germany">
-                        <div class="spinner-grow spinner-grow-sm text-danger" 
-                         data-bs-toggle="tooltip" title="Germany" ></div>
-                    </div>
-                    <div class="pin india">
-                        <div class="spinner-grow spinner-grow-sm text-warning" 
-                         data-bs-toggle="tooltip" title="india"></div>
-                    </div>
-                    <div class="pin bangladesh">
-                        <div class="spinner-grow spinner-grow-sm text-primary" 
-                         data-bs-toggle="tooltip" title="Bangladesh"></div>
-                    </div>
-                    <div class="pin Russia">
-                        <div class="spinner-grow spinner-grow-sm text-secondary" 
-                        data-bs-toggle="tooltip" title="Russia"></div>
-                    </div>
-                    <div class="pin uk">
-                        <div class="spinner-grow spinner-grow-sm text-success" 
-                        data-bs-toggle="tooltip" title="UK"></div>
-                    </div>
-                    <div class="pin indonesia">
-                        <div class="spinner-grow spinner-grow-sm text-info" 
-                        data-bs-toggle="tooltip" title="Indonesia"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="container mb-5">
-                <div class="map-button">
-                    <div class="map_child">
-                        <button class="btn btn-outline-dark fw-bold">India</button>
-                    </div>
-                    <!--  -->
-                    <div class="map_child">
-                        <button class="btn btn-outline-dark fw-bold">Germany</button>
-                    </div>
-                    <!--  -->
-                    <div class="map_child">
-                        <button class="btn btn-outline-dark fw-bold">Russia </button>
-                    </div>
-                    <!--  -->
-                    <div class="map_child">
-                        <button class="btn btn-outline-dark fw-bold">Bangladesh </button>
-                    </div>
-                    <!--  -->
-                    <div class="map_child">
-                        <button class="btn btn-outline-dark fw-bold">Indonesia</button>
-                    </div>
-                    <!--  -->
-                    <div class="map_child">
-                        <button class="btn btn-outline-dark fw-bold">More...</button>
-                    </div>
-                    <!--  -->
-                </div>
-            </div>
-
-          </section>
-         <!-- end locatio section  -->
-
-
-    <main></main>
+     </section>
+    <!-- end service section  -->
     <footer>
-        <!-- place footer here -->
+      <!-- place footer here -->
     </footer>
     <!-- map js  -->
     <script>
-        // Initialize tooltips
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-          return new bootstrap.Tooltip(tooltipTriggerEl)
-        })
-        </script>
+      // Initialize tooltips
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
     <!-- map js  -->
     <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
