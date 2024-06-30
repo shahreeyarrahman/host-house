@@ -15,11 +15,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
-
 nav a {
     font-family: var(--primary-font);
-    font-size: 12px !important;
+    font-size: 15px !important;
 }
 
 nav .login_button {
@@ -27,29 +27,53 @@ nav .login_button {
     color: white;
     text-transform: uppercase;
     font-weight: bold;
+    padding-top: 10px;
+    margin-left:10px;
 }
 
 nav .login_button:hover {
     border: solid 1px var(--primary);
-    color: var(--primary);
+    color: var(--primary) !important;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-nav a:hover {
+nav li a:hover {
     color: var(--primary) !important;
-    letter-spacing: 1.5px;
-    transition: all .5s;
-    font-weight: bold;
+    background-color: var(--primary);
+    border-radius: 3px;
+    color: white !important;
 }
 
 .dropdown-menu a {
     padding: 2px;
 }
+nav{
+    backdrop-filter: blur(10px);
+}
+
+@media screen and (max-width:768px) {
+    nav{
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        background-color: rgb(255, 255, 255);
+    }
+    nav .login_button{
+        margin-left: 0px;
+        width: 100%;
+        border-radius: 5px;
+    }
+    nav ul li a {
+        text-align: center;
+    }
+}
 
 /* start hero section */
 .hero {
-    background: url(./hero-image.png) no-repeat;
+    background: url(../images/hero-image.png) no-repeat;
     width: 100%;
     height: 100vh;
     background-position: center;
@@ -59,10 +83,11 @@ nav a:hover {
     background-size: cover;
     object-fit: contain;
     font-family: "Ubuntu";
+    
 }
 
 .hero_content button {
-    padding: 8px;
+    padding: 5px;
     font-weight: 500;
     background-color: #FF6F6F;
     color: white;
@@ -123,60 +148,46 @@ nav a:hover {
 
 }
 
-/* start feature section  */
-.feature {
-    margin-top: -100px;
-}
+/* start DomainSearch section  */
+
+
 
 .domainPricings {
     width: 100%;
-    min-height: 270px;
+    min-height: 120px;
     background-color: rgb(255, 255, 255);
     font-family: Ubuntu;
 }
-
 .feature_content input {
     background-color: #FFDDDD;
+    
 }
-
-.feature_child {
-    width: 100px;
-}
-
-.feature_child h4 {
-    color: var(--primary);
-}
-
-.feature_child .font_family {
-    font-family: Raleway;
-    font-weight: 500;
-}
-
-.feature_hosting {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 16px;
-    padding-bottom: 30px;
-}
-
 .feature_content form input:focus {
     background-color: #FFDDDD;
     outline: none;
     padding-left: 40px;
     transition: all 1s;
 }
-
 @media screen and (max-width:768px) {
     .feature_content form {
         width: 100% !important;
     }
 }
 
-/* start card section */
+#domainSearchSection{
+    position: relative;
+}
+.domainSearch{
+    margin-top: -100px;
+   
+
+}
+
+/* start feature section */
 #card {
     font-family: var(--ubunto);
 }
+
 
 /* start plan section  */
 .plan {
@@ -192,17 +203,17 @@ nav a:hover {
     position: relative;
 }
 
-.plan .button-one {
+.hostingPricingCard .button-one {
     background-color: var(--primary);
     color: white;
 
 }
 
-.plan .button-two {
+.hostingPricingCard .button-two {
     border: solid 1px var(--primary);
 }
 
-.plan button:hover {
+.hostingPricingCard button:hover {
     border: solid 1px var(--primary);
 }
 
@@ -275,7 +286,7 @@ nav a:hover {
 }
 
 /* start control pannel */
-#control-pannel {
+#controlPannel {
     font-family: var(--ubunto);
 }
 
@@ -479,7 +490,7 @@ nav a:hover {
 
 /* start subscribe section  */
 .subscribe {
-    background: url(subscribe-img.png) no-repeat;
+    background: url(../images/subscribe-img.png) no-repeat;
     height: 300px;
     width: 100%;
     background-position: center;
@@ -499,6 +510,9 @@ nav a:hover {
 
     .subscribe-input span {
         font-size: small !important;
+    }
+    .subscribe-input{
+        width: 100%;
     }
 }
 
@@ -528,3 +542,6 @@ nav a:hover {
 }
 
 /* finished home page  */
+.unlimitedPricingCard{
+    display: flex;
+}

@@ -16,17 +16,21 @@
 
 <body>
     <!--start navbar -->
-    <section>
+    <section id="navbar">
         <div class="container">
-            <nav class="navbar navbar-expand-md fw-medium">
+            <nav class="navbar navbar-expand-md fw-medium ">
+                <div class="container"> 
                 <a class="navbar-brand" href="#">
                     <img src="./assets/images/host-house-logo.svg" alt="host-house-logo" width="120px" />
                 </a>
                 <!-- collapse button  -->
-                <button class="navbar-toggler float-left" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#mynavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="navbarCollapseButton">
+                    <button class="navbar-toggler float-left" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#mynavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
                 <div class="collapse navbar-collapse" id="mynavbar">
                     <ul class="navbar-nav text-nowrap text-capitalize ms-auto">
                         <li class="nav-item">
@@ -62,21 +66,21 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="login_button btn py-1 px-3" data-bs-toggle="modal" data-bs-target="#myModal"
+                            <a class="login_button btn py-2 px-3" data-bs-toggle="modal" data-bs-target="#myModal"
                                 href="#">log in</a>
                         </li>
 
-                        <!-- modal hear -->
+                        <!-- modal here 
                         <div class="modal" id="myModal">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
-                                    <!-- Modal Header -->
+                                     Modal Header 
                                     <div class="modal-header">
                                         <h4 class="modal-title fw-light ms-auto">sign in</h4>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                                     </div>
 
-                                    <!-- Modal body -->
+                                    Modal body
                                     <div class="modal-body">
                                         <form action="#">
                                             <div class="form-floating mb-3 mt-3">
@@ -95,7 +99,7 @@
                                         </form>
                                     </div>
 
-                                    <!-- Modal footer -->
+                                    Modal footer
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-danger w-100 py-0" data-bs-dismiss="modal">
                                             Close
@@ -104,9 +108,10 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- modal end -->
+                         modal end -->
                     </ul>
                 </div>
+            </div>
             </nav>
         </div>
     </section>
@@ -116,10 +121,12 @@
     <section class="hero">
         <div class="container">
             <div class="hero_content text-center">
+                <div class="heroHeadingText"> 
                 <h1 class="fw-bold text-uppercase text-white">
                     First & featured hosting plan <br />
                     in your domain
                 </h1>
+            </div>
                 <button type="button" class="mt-1 rounded border-0 text-capitalize text-nowrap hover-effectbtn">
                     <span class="visiblehidden"> try to explore </span>
                     <div class="hover-effect-child">try to explore</div>
@@ -131,9 +138,9 @@
 
     <!-- start domain search section -->
     <section id="domainSearchSection">
-        <div class="domain-search">
+        <div class="domainSearch">
             <div class="container mb-5">
-                <div class="feature_content shadow rounded mb-5">
+                <div class="feature_content shadow rounded mb-5 bg-white">
                     <div class="domainSearchHeading">
                         <h3 class="text-uppercase fw-bold text-center p-4">
                             choose your domain
@@ -141,19 +148,19 @@
                     </div>
 
                     <div class="domainSearchForm">
-                        <form class="w-75 m-auto" action="#">
+                        <form class="w-75 m-auto mb-4" action="#">
                             <div class="input-group mb-3">
                                 <input type="text" class="form-control" placeholder="Search your domain" name="email" />
                                 <button style="background-color: #483875"
-                                    class="input-group-text fw-medium p-3 text-light">
+                                    class="input-group-text fw-medium p-2 text-light">
                                     Search
-                                    <img class="mx-3" src="./search-logo.svg" alt="" width="20px" />
+                                    <img class="mx-3" src="./assets/icons/search-logo.svg" alt="" width="20px" />
                                 </button>
                             </div>
                         </form>
                     </div>
 
-                    <div class="domainPricings">
+                    <div class="domainPricings d-flex justify-content-center flex-wrap gap-3">
                         <div class="domainPriceBox">
                             <h4 class="text-center">.com</h4>
                             <div class="text-center font_family">
@@ -201,11 +208,13 @@
         <div class="container mb-5">
             <div class="row">
                 <div class="col-lg-4 mt-5 col-md-6">
-                    <div class="card border-0 text-center">
-                        <img class="card-img-top m-auto p-4" src="./shild-logo.svg" alt="Card image"
+                    <div class="featureCard text-justify px-2">
+                        <div class="featureCardImg text-center"> 
+                        <img class="card-img-top me-auto p-4" src="./assets/icons/shild-logo.svg" alt="Card image"
                             style="width: 105px" />
+                        </div>
                         <div class="card-body">
-                            <h4 class="p-3 card-title fw-bold">Maximum Security</h4>
+                            <h4 class="p-3 card-title fw-bold text-center">Maximum Security</h4>
                             <p class="card-text">
                                 Some example text some example text. John Doe is an architect
                                 and engineer Lorem ipsum dolor sit amet consectetur
@@ -217,11 +226,13 @@
                 </div>
                 <!--  -->
                 <div class="col-lg-4 mt-5 col-md-6">
-                    <div class="card border-0 text-center">
-                        <img class="card-img-top m-auto" src="./Launching-logo.svg" alt="Card image"
+                    <div class="featureCard text-justify px-2">
+                        <div class="featureCardImg text-center"> 
+                        <img class="card-img-top m-auto" src="./assets/icons/Launching-logo.svg" alt="Card image"
                             style="width: 70px" />
+                        </div>
                         <div class="card-body">
-                            <h4 class="p-3 card-title fw-bold">Super Fast Speed</h4>
+                            <h4 class="p-3 card-title fw-bold text-center">Super Fast Speed</h4>
                             <p class="card-text">
                                 Some example text some example text. John Doe is an architect
                                 and engineer Lorem ipsum dolor sit amet consectetur
@@ -233,11 +244,13 @@
                 </div>
                 <!--  -->
                 <div class="col-lg-4 mt-5 col-md-6">
-                    <div class="card border-0 text-center">
-                        <img class="card-img-top m-auto p-4" src="./headphone-logo.svg" alt="Card image"
+                    <div class="featureCard text-justify px-2 ">
+                        <div class="featureCardImg text-center"> 
+                        <img class="card-img-top m-auto p-4" src="./assets/icons/headphone-logo.svg" alt="Card image"
                             style="width: 105px" />
+                        </div>
                         <div class="card-body">
-                            <h4 class="p-3 card-title fw-bold">24/7 Supported</h4>
+                            <h4 class="p-3 card-title fw-bold text-center">24/7 Supported</h4>
                             <p class="card-text">
                                 Some example text some example text. John Doe is an architect
                                 and engineer Lorem ipsum dolor sit amet consectetur
@@ -253,8 +266,8 @@
     </section>
     <!-- end  features section  -->
 
-    <!-- start hosting plan section  -->
-    <section class="plan">
+    <!-- start hosting pricing section  -->
+    <section class="hostingPricingCard">
         <div class="container mb-5">
             <div class="plan_text text-center text-capitalize">
                 <h3 class="fw-bold">web hosting plan</h3>
@@ -266,8 +279,10 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mt-5 mb-5 card-one text-center border shadow">
+            <div class="row mx-2 gap-5 d-flex justify-content-center flex-wrap">
+
+                <!-- <div class="standardPricingCard"> -->
+                <div class="col-lg-3 col-md-6 mt-5 mb-5 card-one text-center border shadow">
                     <h4 class="pt-4 fw-bold">Standard</h4>
                     <p class="p-text mb-4">the plan is ideal to get started</p>
                     <p class="mb-4">
@@ -277,54 +292,55 @@
                     </p>
                     <hr class="mx-5 text-secondary" />
                     <p class="fw-medium mb-4">Features</p>
-                    <ul class="text-start ms-5 mb-5">
+                    <ul class="text-start mb-5">
                         <li>
-                            <img class="me-3" src="./list-logo.svg" alt="" width="13px" /> 3
+                            <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 3
                             GB SSD storage
                         </li>
                         <li>
-                            <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                            <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
                             500 GB Brandwidth
                         </li>
                         <li>
-                            <img class="me-3" src="./list-logo.svg" alt="" width="13px" /> 3
+                            <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 3
                             Website
                         </li>
                         <li>
-                            <img class="me-3" src="./list-logo.svg" alt="" width="13px" /> 5
+                            <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 5
                             mail accounts
                         </li>
                         <li>
-                            <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                            <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
                             premium SSL certificate
                         </li>
                         <li>
-                            <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                            <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
                             auto backup & cloud storage
                         </li>
                         <li>
-                            <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                            <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
                             website toolkit
                         </li>
                         <li>
-                            <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                            <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
                             security shild
                         </li>
                         <li>
-                            <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                            <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
                             advanced featured
                         </li>
                         <li>
-                            <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                            <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
                             24/7 support
                         </li>
                     </ul>
                     <button class="card-one-bottm fw-medium">get started</button>
                 </div>
-
+           
                 <!-- end card-one -->
 
-                <div class="col-lg-4 col-md-6 px-2 card-one card-two text-center border shadow">
+                <!-- <div class="premiumPricingCard ">  -->
+                <div class="col-lg-3 col-md-6 px-2 card-one card-two text-center border shadow">
                     <div class="box"></div>
                     <span class="rotate-text"> Most Populer </span>
                     <h4 class="pt-5 fw-bold">Premium</h4>
@@ -336,45 +352,45 @@
                     </p>
                     <hr class="mx-5 text-secondary" />
                     <p class="fw-medium mb-4">Features</p>
-                    <ul class="text-start ms-5 mb-5">
+                    <ul class="text-start mb-5">
                         <li>
-                            <img class="me-3" src="./list-logo.svg" alt="" width="13px" /> 3
+                            <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 3
                             GB SSD storage
                         </li>
                         <li>
-                            <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                            <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
                             500 GB Brandwidth
                         </li>
                         <li>
-                            <img class="me-3" src="./list-logo.svg" alt="" width="13px" /> 3
+                            <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 3
                             Website
                         </li>
                         <li>
-                            <img class="me-3" src="./list-logo.svg" alt="" width="13px" /> 5
+                            <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 5
                             mail accounts
                         </li>
                         <li>
-                            <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                            <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
                             premium SSL certificate
                         </li>
                         <li>
-                            <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                            <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
                             auto backup & cloud storage
                         </li>
                         <li>
-                            <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                            <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
                             website toolkit
                         </li>
                         <li>
-                            <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                            <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
                             security shild
                         </li>
                         <li>
-                            <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                            <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
                             advanced featured
                         </li>
                         <li>
-                            <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                            <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
                             24/7 support
                         </li>
                     </ul>
@@ -382,10 +398,10 @@
                         get started
                     </button>
                 </div>
-
+           
                 <!--  end card-two -->
-
-                <div class="col-lg-4 col-md-6 mt-5 card-one text-center border shadow">
+            <!-- <div class="unlimitedPricingCard">  -->
+                <div class="col-lg-3 col-md-6 mt-5 card-one text-center border shadow">
                     <h4 class="pt-4 fw-bold">Unlimited</h4>
                     <p class="p-text mb-4">the plan is ideal to get started</p>
                     <p class="mb-4">
@@ -395,62 +411,62 @@
                     </p>
                     <hr class="mx-5 text-secondary" />
                     <p class="fw-medium mb-4">Features</p>
-                    <ul class="text-start ms-5 mb-5">
+                    <ul class="text-start mb-5">
                         <li>
-                            <img class="me-3" src="./list-logo.svg" alt="" width="13px" /> 3
+                            <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 3
                             GB SSD storage
                         </li>
                         <li>
-                            <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                            <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
                             500 GB Brandwidth
                         </li>
                         <li>
-                            <img class="me-3" src="./list-logo.svg" alt="" width="13px" /> 3
+                            <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 3
                             Website
                         </li>
                         <li>
-                            <img class="me-3" src="./list-logo.svg" alt="" width="13px" /> 5
+                            <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 5
                             mail accounts
                         </li>
                         <li>
-                            <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                            <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
                             premium SSL certificate
                         </li>
                         <li>
-                            <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                            <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
                             auto backup & cloud storage
                         </li>
                         <li>
-                            <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                            <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
                             website toolkit
                         </li>
                         <li>
-                            <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                            <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
                             security shild
                         </li>
                         <li>
-                            <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                            <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
                             advanced featured
                         </li>
                         <li>
-                            <img class="me-3" src="./list-logo.svg" alt="" width="13px" />
+                            <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
                             24/7 support
                         </li>
                     </ul>
                     <button class="card-one-bottm fw-medium">get started</button>
                 </div>
-
+            
                 <!-- end card-three -->
             </div>
             <div class="text-center mt-4">
-                <a class="fw-medium text-dark" href=""> See More </a>
+                <a class="fw-medium text-dark mt-5" href=""> See More </a>
             </div>
         </div>
     </section>
     <!-- end hosting plan section ****************gap problem   -->
 
-    <!-- start-control panel -->
-    <section id="control-pannel">
+    <!-- start controlPannel -->
+    <section id="controlPannel">
         <div class="container mb-5">
             <div class="control-pannel-content text-center text-capitalize">
                 <h3 class="fw-bold">user - frindly control pannel</h3>
@@ -463,11 +479,11 @@
                 <div class="col-md-6">
                     <div class="column">
                         <div class="pannel-card1">
-                            <div class="card border-0 text-center">
-                                <img class="card-img-top m-auto p-4" src="./bulb-icon.svg" alt="Card image"
+                            <div class="card border-0">
+                                <img class="card-img-top m-auto p-4" src="./assets/icons/bulb-icon.svg" alt="Card image"
                                     style="width: 105px" />
                                 <div class="card-body">
-                                    <h4 class="p-3 card-title fw-bold">Easy to Used</h4>
+                                    <h4 class="p-3 card-title fw-bold text-center">Easy to Used</h4>
                                     <p class="card-text">
                                         Some example text some example text. John Doe is an
                                         architect and engineer Lorem ipsum dolor sit amet
@@ -478,11 +494,11 @@
                                 </div>
                             </div>
                             <!--  -->
-                            <div class="card border-0 text-center">
-                                <img class="card-img-top m-auto p-4" src="./power-house-icone.svg" alt="Card image"
+                            <div class="card border-0">
+                                <img class="card-img-top m-auto p-4" src="./assets/icons/power-house-icone.svg" alt="Card image"
                                     style="width: 105px" />
                                 <div class="card-body">
-                                    <h4 class="p-3 card-title fw-bold">Powerfull Hosting</h4>
+                                    <h4 class="p-3 card-title fw-bold text-center">Powerfull Hosting</h4>
                                     <p class="card-text">
                                         Some example text some example text. John Doe is an
                                         architect and engineer Lorem ipsum dolor sit amet
@@ -493,11 +509,11 @@
                                 </div>
                             </div>
                             <!--  -->
-                            <div class="card border-0 text-center">
-                                <img class="card-img-top m-auto p-4" src="manegment-icon.svg" alt="Card image"
+                            <div class="card border-0">
+                                <img class="card-img-top m-auto p-4" src="./assets/icons/manegment-icon.svg" alt="Card image"
                                     style="width: 105px" />
                                 <div class="card-body">
-                                    <h4 class="p-3 card-title fw-bold">Easy Manegment</h4>
+                                    <h4 class="p-3 card-title fw-bold text-center">Easy Manegment</h4>
                                     <p class="card-text">
                                         Some example text some example text. John Doe is an
                                         architect and engineer Lorem ipsum dolor sit amet
@@ -512,7 +528,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 laptop-img">
-                    <img style="" src="./laptop-img.png" alt="" class="laptop-main-img" />
+                    <img style="" src="./assets/images/laptop-img.png" alt="" class="laptop-main-img" />
                 </div>
             </div>
         </div>
@@ -520,17 +536,17 @@
     <!-- end-control panel -->
 
     <!-- start migrate section  -->
-    <section class="migrate">
+    <section class="migrate p-2">
         <div class="container mb-4">
             <div class="row">
                 <div class="col-md-6 d-flex truck-image">
-                    <img src="./truck-imag.png" alt="" width="90%" />
+                    <img src="./assets/images/truck-imag.png" alt="" width="90%" />
                 </div>
                 <div class="col-md-6 migrate_child2">
                     <h5 class="text-center text-capitalize fw-bold text-justify p-3 pt-5">
                         migrate your site for FREE!
                     </h5>
-                    <p>
+                    <p class="p-2">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
                         magnam, totam debitis odio, laudantium consequuntur expedita
                         accusantium inventore ducimus reiciendis maxime eveniet molestias
@@ -538,7 +554,7 @@
                     </p>
                     <br />
                     <div class="view-button">
-                        <img src="./list-logo.svg" alt="" />
+                        <img src="./assets/icons/list-logo.svg" alt="" />
                         <span class="fw-medium text-capitalize ps-3">
                             Migratio for any compatible server
                         </span>
@@ -564,7 +580,7 @@
         </div>
         <div class="map mb-5">
             <div class="world-map">
-                <img class="" src="./map-img.png" alt="map" />
+                <img class="" src="./assets/images/map-img.png" alt="map" />
                 <div class="pin Germany">
                     <div class="spinner-grow spinner-grow-sm text-danger" data-bs-toggle="tooltip" title="Germany">
                     </div>
@@ -629,12 +645,12 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-3 mt-5 col-md-6">
-                    <div class="card border-0 text-center">
-                        <img class="card-img-top m-auto p-4" src="./service-shil-icone.svg" alt="Card image"
-                            style="width: 115px" />
+                <div class="col-lg-3 mt-3 col-md-6">
+                    <div class="card border-0 ">
+                        <img class="card-img-top m-auto p-3" src="./assets/icons/service-shil-icone.svg" alt="Card image"
+                            style="width: 80px" />
                         <div class="card-body">
-                            <h5 class="pb-3 pt-1 card-title fw-bold">Rock - Solid Security</h5>
+                            <h5 class="pb-3 pt-1 card-title fw-bold text-center">Rock - Solid Security</h5>
                             <p class="card-text">
                                 Some example text some example text. John Doe is an architect
                                 consectetur
@@ -642,17 +658,17 @@
                             </p>
                         </div>
                         <div class="service-img text-center">
-                            <img src="next-icone.svg" alt="">
+                            <img src="./assets/icons/next-icone.svg" alt="">
                         </div>
                     </div>
                 </div>
                 <!--  -->
-                <div class="col-lg-3 mt-5 col-md-6">
-                    <div class="card border-0 text-center">
-                        <img class="card-img-top m-auto p-4" src="./service-bankcard-icon.svg" alt="Card image"
-                            style="width: 137px" />
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 ">
+                        <img class="card-img-top m-auto pt-5" src="./assets/icons/service-bankcard-icon.svg" alt="Card image"
+                            style="width: 60px" />
                         <div class="card-body">
-                            <h5 class="p-3 card-title fw-bold">100% Moneyback Gurantee</h5>
+                            <h5 class="p-3 card-title fw-bold text-center">100% Moneyback Gurantee</h5>
                             <p class="card-text">
                                 Some example text some example text. John Doe is an architect
                                 consectetur
@@ -660,17 +676,17 @@
                             </p>
                         </div>
                         <div class="service-img text-center">
-                            <img src="next-icone.svg" alt="">
+                            <img src="./assets/icons/next-icone.svg" alt="">
                         </div>
                     </div>
                 </div>
                 <!--  -->
-                <div class="col-lg-3 mt-5 col-md-6">
-                    <div class="card border-0 text-center">
-                        <img class="card-img-top m-auto p-4" src="./service-speed-metar.svg" alt="Card image"
-                            style="width: 135px" />
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 ">
+                        <img class="card-img-top m-auto pt-5" src="./assets/icons/service-speed-metar.svg" alt="Card image"
+                            style="width: 60px" />
                         <div class="card-body">
-                            <h5 class="p-3 card-title fw-bold">High Performance</h5>
+                            <h5 class="p-3 card-title fw-bold text-center">High Performance</h5>
                             <p class="card-text">
                                 Some example text some example text. John Doe is an architect
                                 consectetur
@@ -678,17 +694,17 @@
                             </p>
                         </div>
                         <div class="service-img text-center">
-                            <img src="next-icone.svg" alt="">
+                            <img src="./assets/icons/next-icone.svg" alt="">
                         </div>
                     </div>
                 </div>
                 <!--  -->
-                <div class="col-lg-3 mt-5 col-md-6">
-                    <div class="card border-0 text-center">
-                        <img class="card-img-top m-auto p-4" src="./service-file-manger.svg" alt="Card image"
-                            style="width: 115px" />
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 ">
+                        <img class="card-img-top m-auto pt-5" src="./assets/icons/service-file-manger.svg" alt="Card image"
+                            style="width: 50px" />
                         <div class="card-body">
-                            <h5 class="p-3 card-title fw-bold">Smooth Data Transfer</h5>
+                            <h5 class="p-3 card-title fw-bold text-center">Smooth Data Transfer</h5>
                             <p class="card-text">
                                 Some example text some example text. John Doe is an architect
                                 consectetur
@@ -696,7 +712,7 @@
                             </p>
                         </div>
                         <div class="service-img text-center">
-                            <img src="next-icone.svg" alt="">
+                            <img src="./assets/icons/next-icone.svg" alt="">
                         </div>
                     </div>
                 </div>
@@ -709,10 +725,10 @@
 
     <!-- start customer review section  -->
     <section class="customer">
-        <div class="container my-5">
+        <div class="container ">
             <div class="row">
-                <div class="col-md-7 px-5">
-                    <h3 class="fw-bold "> What is Review</h3>
+                <div class="col-md-7 px-4">
+                    <h3 class="fw-bold pb-3 "> What is Review</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit in placeat fugit nobis quam?
                         Eligendi nisi recusandae minus officiis, aut beatae vitae laudantium quam reiciendis quod
                         adipisci quisquam accusantium sunt dolores? Deserunt, nobis placeat quam quidem atque doloribus
@@ -722,7 +738,7 @@
                     <h5 class="fw-bold customer-text"> 20,000+</h5>
                     <h5 class="fw-bold"> Happy Customer</h5>
                 </div>
-                <div class="col-md-5 px-5">
+                <div class="col-md-5 px-4">
                     <h5 class="fw-bold py-3">Our Happy Customer </h5>
                     <div class="card customer-card w-100 p-3 pb-0 text-light">
                         <q class="ricky-jhon-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque saepe
@@ -730,14 +746,15 @@
                             sunt odit possimus quisquam quis minima, similique voluptatum provident Lorem, ipsum dolor
                             sit amet consectetur adipisicing elit. Veritatis, velit? culpa!</q>
                         <div class="star-img  d-flex my-1">
-                            <img src="Star-icone.svg" alt="" width="15px">
-                            <img src="Star-icone.svg" alt="" width="15px">
-                            <img src="Star-icone.svg" alt="" width="15px">
-                            <img src="Star-icone.svg" alt="" width="15px">
-                            <img src="Star-icone.svg" alt="" width="15px">
+                            <img src="./assets/icons/Star-icone.svg" alt="" width="15px">
+                            <img src="./assets/icons/Star-icone.svg" alt="" width="15px">
+                            <img src="./assets/icons/Star-icone.svg" alt="" width="15px">
+                            <img src="./assets/icons/Star-icone.svg" alt="" width="15px">
+                            <img src="./assets/icons/Star-icone.svg" alt="" width="15px">
+                         
                         </div>
                         <div class="ricky-jhon-card d-flex">
-                            <img src="ricky-jhon-img.svg" alt="" width="40px">
+                            <img src="./assets/icons/ricky-jhon-img.svg" alt="" width="40px">
                             <p class="ps-3"> <span class="fw-medium "> Ricky John </span>
                                 <br> <span class="text-secondary"> Businessman </span>
                             </p>
@@ -753,51 +770,53 @@
     <!-- start rating section  -->
     <section class="rating">
         <div class="container my-5">
-            <div class="row ">
-                <div class="col-md-3 mt-4 shadow text-center">
-                    <img class="py-2 pt-5" src="google-icon.svg" alt="" width="100px">
+            <div class="row d-flex justify-content-evenly flex-wrap  ">
+                <div class="col-md-2  mt-4 shadow text-center rounded ">
+                    <img class="py-2 pt-5" src="./assets/icons/google-icon.svg" alt="" width="100px">
                     <div class="rating-star">
-                        <img src="Star-icone.svg" alt="">
-                        <img src="Star-icone.svg" alt="">
-                        <img src="Star-icone.svg" alt="">
-                        <img src="Star-icone.svg" alt="">
-                        <img src="Star-icone.svg" alt="">
+                        <img src="./assets/icons/Star-icone.svg" alt="">
+                        <img src="./assets/icons/Star-icone.svg" alt="">
+                        <img src="./assets/icons/Star-icone.svg" alt="">
+                        <img src="./assets/icons/Star-icone.svg" alt="">
+                        <img src="./assets/icons/Star-icone.svg" alt="">
+                        
                     </div>
                     <p class="py-2 fw-bold">Rating: 5 out of 5 </p>
                 </div>
                 <!--  -->
-                <div class="col-md-3 mt-4 shadow text-center">
-                    <img class="py-2 pt-4" src="wordpress-icon.svg" alt="" width="90px">
+                <div class="col-md-2  mt-4 shadow text-center rounded">
+                    <img class="py-2 pt-4" src="./assets/icons/wordpress-icon.svg" alt="" width="90px">
                     <div class="rating-star">
-                        <img src="Star-icone.svg" alt="">
-                        <img src="Star-icone.svg" alt="">
-                        <img src="Star-icone.svg" alt="">
-                        <img src="Star-icone.svg" alt="">
-                        <img src="Star-icone.svg" alt="">
+                        <img src="./assets/icons/Star-icone.svg" alt="">
+                        <img src="./assets/icons/Star-icone.svg" alt="">
+                        <img src="./assets/icons/Star-icone.svg" alt="">
+                        <img src="./assets/icons/Star-icone.svg" alt="">
+                        <img src="./assets/icons/Star-icone.svg" alt="">
+                        
                     </div>
                     <p class="py-2 fw-bold">Rating: 4.8 out of 5 </p>
                 </div>
                 <!--  -->
-                <div class="col-md-3 mt-4 shadow text-center">
-                    <img class="py-2 pt-5" src="trust-pilot-icon.svg" alt="" width="100px">
+                <div class="col-md-2  mt-4 shadow text-center rounded">
+                    <img class="py-2 pt-5" src="./assets/icons/trust-pilot-icon.svg" alt="" width="100px">
                     <div class="rating-star">
-                        <img src="Star-icone.svg" alt="">
-                        <img src="Star-icone.svg" alt="">
-                        <img src="Star-icone.svg" alt="">
-                        <img src="Star-icone.svg" alt="">
-                        <img src="Star-icone.svg" alt="">
+                        <img src="./assets/icons/Star-icone.svg" alt="">
+                        <img src="./assets/icons/Star-icone.svg" alt="">
+                        <img src="./assets/icons/Star-icone.svg" alt="">
+                        <img src="./assets/icons/Star-icone.svg" alt="">
+                        <img src="./assets/icons/Star-icone.svg" alt="">
                     </div>
                     <p class="py-2 fw-bold">Rating: 5 out of 5 </p>
                 </div>
                 <!--  -->
-                <div class="col-md-3 mt-4 shadow text-center">
-                    <img class="py-2 pt-5" src="joomla-icon.svg" alt="" width="100px">
+                <div class="col-md-2  mt-4 shadow text-center rounded">
+                    <img class="py-2 pt-5" src="./assets/icons/joomla-icon.svg" alt="" width="100px">
                     <div class="rating-star">
-                        <img src="Star-icone.svg" alt="">
-                        <img src="Star-icone.svg" alt="">
-                        <img src="Star-icone.svg" alt="">
-                        <img src="Star-icone.svg" alt="">
-                        <img src="Star-icone.svg" alt="">
+                        <img src="./assets/icons/Star-icone.svg" alt="">
+                        <img src="./assets/icons/Star-icone.svg" alt="">
+                        <img src="./assets/icons/Star-icone.svg" alt="">
+                        <img src="./assets/icons/Star-icone.svg" alt="">
+                        <img src="./assets/icons/Star-icone.svg" alt="">
                     </div>
                     <p class="py-2 fw-bold">Rating: 4.7 out of 5 </p>
                 </div>
@@ -814,7 +833,7 @@
                 <h3 class="fw-bold pt-5">Subscribe to Your Newsletter</h3>
                 <br>
 
-                <div class="input-group mb-3 w-50 m-auto subscribe-input">
+                <div class="input-group mb-3 w-50 m-auto subscribe-input d-flex flex-nowrap">
                     <input type="text" class="form-control p-2" placeholder="Your Email" name="email">
                     <span class="input-group-text text-light fw-bold fs-5">Subscribe</span>
                 </div>
@@ -830,35 +849,35 @@
                 <div class="row ">
 
                     <div class="footer_child1 col-md-6 text-center">
-                        <img class="py-3" src="./host-house-logo.svg" alt="" width="160px">
-                        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                        <img class="py-3" src="./assets/images/host-house-logo.svg" alt="" width="160px">
+                        <p class="text-secondary p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
                             laboriosam, asperiores tenetur omnis quibusdam doloribus labore velit obcaecati? Quas natus
                             sequi doloremque, optio officiis architecto unde non exercitationem fuga rerum.</p>
                         <div class="footer-img">
-                            <img src="./fb-icone.svg" alt="" width="30px">
-                            <img src="./twtter-icon.svg" alt="" width="30px">
-                            <img src="./linkdin-icone.svg" alt="" width="30px">
-                            <img src="./instagram-icon.svg" alt="" width="30px">
+                            <img src="./assets/icons/fb-icone.svg" alt="" width="30px">
+                            <img src="./assets/icons/twtter-icon.svg" alt="" width="30px">
+                            <img src="./assets/icons/linkdin-icone.svg" alt="" width="30px">
+                            <img src="./assets/icons/instagram-icon.svg" alt="" width="30px">
                         </div>
                         <div class="payment-method">
                             <h4 class="py-4">Payment Method </h4>
-                            <img src="visacard.svg" alt="">
-                            <img src="paypalcard.svg" alt="">
-                            <img src="bikash.svg" alt="">
+                            <img src="./assets/icons/visacard.svg" alt="">
+                            <img src="./assets/icons/paypalcard.svg" alt="">
+                            <img src="./assets/icons/bikash.svg" alt="">
                             <br>
-                            <img class="mt-3" src="mastercard.svg" alt="">
-                            <img class="mt-3" src="american-express.svg" alt="">
-                            <img class="mt-3" src="rocket.png" alt="">
+                            <img class="mt-3" src="./assets/icons/mastercard.svg" alt="">
+                            <img class="mt-3" src="./assets/icons/american-express.svg" alt="">
+                            <img class="mt-3" src="./assets/icons/rocket.png" alt="">
                         </div>
                     </div>
                     <!--  -->
-                    <div class="domain-service pt-5 col-md-2 ">
+                    <div class="domain-service pt-5 col-md-2 p-4 ">
                         <h6>domain service </h6>
                         <p>domain registration</p>
                         <p>domain Transfer</p>
                     </div>
                     <!--  -->
-                    <div class="domain-service pt-5 col-md-2 ">
+                    <div class="domain-service pt-5 col-md-2 p-4 ">
                         <h6>company </h6>
                         <p>aboute us </p>
                         <p>blog</p>
@@ -867,10 +886,10 @@
                         <p>award and reveiw</p>
                     </div>
                     <!--  -->
-                    <div class="domain-service pt-5 col-md-2 ">
+                    <div class="domain-service pt-5 col-md-2 p-4 ">
                         <h6>support </h6>
-                        <p><img src="phone-icone.svg" alt="">+275 451 6245</p>
-                        <p><img src="mailbox-icone.png" alt="">support@gmail.com</p>
+                        <p><img src="./assets/icons/phone-icone.svg" alt="">+275 451 6245</p>
+                        <p><img src="./assets/icons/mailbox.svg" alt="">support@gmail.com</p>
                     </div>
                     <!--  -->
 
