@@ -55,7 +55,7 @@ nav li a:hover {
     padding: 2px;
 }
 nav{
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
 }
 
 @media screen and (max-width:768px) {
@@ -296,8 +296,8 @@ nav{
 }
 
 @media screen and (max-width:576px) {
-    .resizePricingCard{
-        margin-top: 10px !important;
+    .card-two{
+        margin-top: 20px !important;
     }
 }
 
@@ -486,7 +486,7 @@ nav{
 /* start customer section  */
 .customer {
     font-family: var(--ubunto);
-    margin-top: 100px;
+    margin-top: 110px;
 }
 
 .customer-card {
@@ -562,4 +562,10 @@ nav{
 /* finished home page  */
 .unlimitedPricingCard{
     display: flex;
+}
+@media screen and (max-width: 576px) {
+    .ratingResponsive{
+        width: 40% !important;
+        margin: 10px;
+    }
 }
