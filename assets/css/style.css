@@ -101,9 +101,9 @@ nav{
 
 }
 .hero_content h1{
-    font-size: 70px;
+    font-size: 60px;
     font-family: var(--primary-font);
-    line-height: 100px;
+    line-height: 80px;
 }
 
 @media screen and (max-width:768px) {
@@ -575,4 +575,11 @@ nav{
 }
 .location-text{
     margin-bottom: -130px;
+}
+.tabsParent button{
+    border-color: var(--primary);
+}
+.tabsParent button:focus{
+    background-color: var(--primary);
+    color: white;
 }
