@@ -19,23 +19,29 @@
 }
 nav a {
     font-family: var(--primary-font);
-    font-size: 15px !important;
+    font-size: 16px !important;
+    margin-left: 30px;
+}
+
+.dropdown-menu a {
+ margin-left: 0px ;
+ padding: 8px !important;
 }
 
 nav .login_button {
     background-color: var(--primary);
     color: white;
     text-transform: uppercase;
-    font-weight: bold;
-    padding-top: 10px;
-    margin-left:10px;
+    
+    padding: 5px 15px !important;
+    margin-left:30px;
 }
 
 nav .login_button:hover {
     border: solid 1px var(--primary);
     color: var(--primary) !important;
     text-transform: uppercase;
-    font-weight: bold;
+   
 }
 
 nav li a:hover {
@@ -93,6 +99,11 @@ nav{
     color: white;
     overflow: hidden;
 
+}
+.hero_content h1{
+    font-size: 70px;
+    font-family: var(--primary-font);
+    line-height: 100px;
 }
 
 @media screen and (max-width:768px) {
@@ -196,9 +207,9 @@ nav{
 
 .card-one {
     width: 25%;
-    height: 600px;
+    height: 570px;
     background-color: #ffffff;
-    border-radius: 25px 0px;
+    border-radius: 30px 0px;
     padding: 0px !important;
     position: relative;
 }
@@ -206,7 +217,6 @@ nav{
 .hostingPricingCard .button-one {
     background-color: var(--primary);
     color: white;
-
 }
 
 .hostingPricingCard .button-two {
@@ -250,7 +260,7 @@ nav{
     perspective: 100px;
     perspective-origin: left;
     width: 25%;
-    min-height: 700px;
+    min-height: 630px;
     overflow: hidden;
     padding: 0 !important;
     position: relative;
@@ -283,6 +293,12 @@ nav{
     top: 30px;
     left: -2px;
     transform: rotate(-49deg);
+}
+
+@media screen and (max-width:576px) {
+    .resizePricingCard{
+        margin-top: 10px !important;
+    }
 }
 
 /* start control pannel */
@@ -464,11 +480,13 @@ nav{
 /* start service section  */
 .service {
     font-family: var(--ubunto);
+    margin-top: 80px;
 }
 
 /* start customer section  */
 .customer {
     font-family: var(--ubunto);
+    margin-top: 100px;
 }
 
 .customer-card {
